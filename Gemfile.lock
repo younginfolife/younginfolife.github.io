@@ -273,6 +273,7 @@ GEM
     verbal_expressions (0.1.5)
 
 PLATFORMS
+  x86_64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
@@ -287,4 +288,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-   2.2.4
+   2.4.6
