@@ -1,8 +1,8 @@
 # main links
 main:
-  - title: "Progetti"
-    url: /projects/  
-  - title: "Team"
+  - title: "Home"
+    url: /home/ 
+  - title: "La nostra squadra"
     url: /group/
   - title: "Contatti"
     url: /contacts/

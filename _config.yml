@@ -11,7 +11,7 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 remote_theme             : "mmistakes/minimal-mistakes@4.21.0"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    :  "default"
+minimal_mistakes_skin    :  "air"
 
 # Site Settings
 locale                   : "en-US"
@@ -24,7 +24,7 @@ url                      : "https://github.com/younginfolife"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "younginfolife"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/cini_logo.png"
+logo                     : "/assets/images/LogoYoungInfolife2.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -93,19 +93,16 @@ analytics:
 # Site Author
 author:
   name             : "Young InfoLife"
-  avatar           :  "/assets/images/qbioGroup.jpg"
+  avatar           :  "/assets/images/LogoYoungInfolife.png"
   bio              : "Young InfoLife group.
 
 "
-  location         : "Turin"
+ # location         : ""
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "pernice@di.unito.it"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://www.cs.unito.it/do/gruppi.pl/Show?_id=lxu3"
+      url: "younginfolife@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/younginfolife"
@@ -113,18 +110,21 @@ author:
 # Site Footer
 footer:
   links:
-   # - label: "Twitter"
-   #   icon: "fab fa-fw fa-twitter-square"
-      # url:
-   # - label: "Facebook"
-   #   icon: "fab fa-fw fa-facebook-square"
-      # url:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "younginfolife@gmail.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://github.com/younginfolife"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://github.com/younginfolife"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/younginfolife"
-    #- label: "GitLab"
-    #  icon: "fab fa-fw fa-gitlab"
-      # url:
+    - label: "Telegram"
+      icon: "fab fa-fw fa-telegram-plane"
+      url: "https://www.telegramitalia.it/young-infolife/"
     #- label: "Bitbucket"
     #  icon: "fab fa-fw fa-bitbucket"
       # url:
