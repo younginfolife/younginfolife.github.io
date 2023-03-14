@@ -42,7 +42,7 @@ function Navbar() {
     };
 
     return (
-        <AppBar position="static" sx={{backgroundColor: "#EEEEEE"}}>
+        <AppBar position="static" sx={{backgroundColor: "rgba(32,61,117,0.9)"}}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     {/*"Little Menu"*/}
@@ -105,7 +105,7 @@ function Navbar() {
                                 onClick={() => {
                                     handleCloseNavMenu(index)
                                 }}
-                                sx={{my: 2, color: 'black', display: 'block'}}
+                                sx={{my: 2, color: 'white', display: 'block'}}
                             >
                                 {page}
                             </Button>

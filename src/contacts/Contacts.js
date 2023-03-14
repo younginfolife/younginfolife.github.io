@@ -1,26 +1,48 @@
-import React from 'react'
-import {Box, Card, TextField} from "@mui/material";
+import React, {useState} from 'react'
+import {Box, Card, CircularProgress, TextField} from "@mui/material";
 import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import axios from 'axios';
 
 const Contacts = () => {
 
+    const [loading, setLoading] = useState(false)
+    const [success, setSuccess] = useState(false);
+
     function sendMail(event){
+        setLoading(true)
         event.preventDefault();
         const data = new FormData(event.currentTarget);
-        axios.post('https://formsubmit.co/younginfolife@gmail.com', {
-            Email: data.get('email'),
-            Testo: data.get('message')
+        fetch('https://formsubmit.co/ajax/younginfolife@gmail.com', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                name: data.get('email'),
+                message: data.get('message')
+            })
         }).then(function (response) {
                 console.log(response);
+                setLoading(false)
+                setSuccess(true)
             })
             .catch(function (error) {
                 console.error(error);
             });
     }
+
+    const buttonSx = {
+        ...(success && {
+            bgcolor: 'green',
+            '&:hover': {
+                bgcolor: 'green',
+            },
+            mt: 2, textTransform: 'none', color: 'white', fontWeight: 'bold',
+        }),
+    };
 
 
     return (
@@ -74,14 +96,30 @@ const Contacts = () => {
                                     type="message"
                                     id="message"
                                 />
-                                <Button
-                                    type="submit"
-                                    fullWidth
-                                    variant="contained"
-                                    sx={{mt: 2, textTransform: 'none', color: 'white', fontWeight: 'bold'}}
-                                >
-                                    Invia
-                                </Button>
+                                <Box sx={{ m: 1, position: 'relative' }}>
+                                    <Button
+                                        sx={buttonSx}
+                                        disabled={loading}
+                                        type="submit"
+                                        fullWidth
+                                        variant="contained"
+                                    >
+                                        Invia
+                                    </Button>
+                                    {loading && (
+                                        <CircularProgress
+                                            size={24}
+                                            sx={{
+                                                color: 'green',
+                                                position: 'absolute',
+                                                top: '50%',
+                                                left: '50%',
+                                                marginTop: '-12px',
+                                                marginLeft: '-12px',
+                                            }}
+                                        />
+                                    )}
+                                </Box>
                             </Box>
                         </Box>
                     </Card>
