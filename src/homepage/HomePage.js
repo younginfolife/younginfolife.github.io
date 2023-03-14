@@ -24,10 +24,10 @@ function HomePage() {
                         Il laboratorio nazionale InfoLife del CINI (Consorzio Interuniversitario Nazionale di Informatica) promuove iniziative di networking tra ricercatori di formazione informatica che conducono ricerche rilevanti in bioinformatica e tematiche correlate, insieme ai loro partner internazionali
                     </p>
 
-                    <TwitterTweetEmbed
-                        onLoad={function noRefCheck(){}}
-                        tweetId="933354946111705097"
-                    />
+                    {/*<TwitterTweetEmbed*/}
+                    {/*    onLoad={function noRefCheck(){}}*/}
+                    {/*    tweetId="933354946111705097"*/}
+                    {/*/>*/}
                 </Container>
             </Box>
 
