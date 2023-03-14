@@ -1,8 +1,0 @@
-# main links
-main:
-  - title: "Home"
-    url: /home/ 
-  - title: "La nostra squadra"
-    url: /group/
-  - title: "Contatti"
-    url: /contacts/
