@@ -14,7 +14,7 @@ import './Navbar.css';
 import {Grid} from "@mui/material";
 import {useNavigate} from "react-router-dom";
 
-const pages = ['Home', 'La nostra squadra', 'Contatti'];
+const pages = ['Home', 'La nostra squadra', 'Contatti', 'News'];
 
 function Navbar() {
     const navigate = useNavigate();
@@ -35,6 +35,9 @@ function Navbar() {
             case 2:
                 navigate('/contacts')
                 break
+            case 3:
+                navigate('/news')
+                break
             default:
                 console.log("Error")
         }
@@ -42,7 +45,7 @@ function Navbar() {
     };
 
     return (
-        <AppBar position="static" sx={{backgroundColor: "rgba(32,61,117,0.9)"}}>
+        <AppBar position="static" sx={{backgroundColor: "rgba(33,33,51,0.3)"}}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     {/*"Little Menu"*/}
@@ -53,9 +56,8 @@ function Navbar() {
                             aria-controls="menu-appbar"
                             aria-haspopup="true"
                             onClick={handleOpenNavMenu}
-                            color="black"
                         >
-                            <MenuIcon/>
+                            <MenuIcon id={"icon"}/>
                         </IconButton>
                         <Menu
                             id="menu-appbar"
@@ -95,7 +97,7 @@ function Navbar() {
 
                     {/*"Big Menu"*/}
                     <Grid sx={{display: {xs: 'none', md: 'flex'}, mr: 1}}>
-                        <img src={logo} id={"Logo"}/>
+                        <img src={logo} id={"Logo"} style={{paddingTop:"3%", paddingBottom:"3%"}}/>
                     </Grid>
                     <Box sx={{flexGrow: 1, display: {xs: 'none', md: 'flex'}}}/>
                     <Box sx={{display: {xs: 'none', md: 'flex'}}}>

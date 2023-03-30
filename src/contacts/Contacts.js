@@ -50,7 +50,7 @@ const Contacts = () => {
 
             <Navbar/>
 
-            <Box>
+            <Box color={"white"}>
 
                 <Container component="main" maxWidth="sm">
                     <h1>Contattaci</h1>

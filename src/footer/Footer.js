@@ -42,12 +42,12 @@ const Footer = () => {
                         <Telegram/>
                     </a>
 
-                    <a id={"icon"} href={"https://younginfolife.github.io/webpage/feed.xml"}>
+                    <a id={"icon"} href={"#"}>
                         <RssFeedOutlined/>
                     </a>
                 </Box>
 
-                <Typography textAlign="center"> {`© ${year} Younginfolife`}</Typography>
+                <Typography textAlign="center" color={"white"}> {`© ${year} Younginfolife`}</Typography>
             </Box>
         </Box>
     )
