@@ -16,7 +16,6 @@ function News() {
 
                 <Container component="main" maxWidth="lg" sx={{color:"white", paddingTop:"3%"}}>
                     <TwitterTimelineEmbed
-                        onLoad={}
                         sourceType="profile"
                         screenName="QbioGroup"
                         options={{height: 500}}
