@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/webpage/static/css/main.e3cee1b0.css",
-    "main.js": "/webpage/static/js/main.78a3bcb9.js",
+    "main.js": "/webpage/static/js/main.d1daccf0.js",
     "static/media/MainLogoHome.png": "/webpage/static/media/MainLogoHome.a8f0d99b49677442c56c.png",
     "static/media/mappa.png": "/webpage/static/media/mappa.ff4d3c1e47a2e41cbc55.png",
     "static/media/LogoYoungInfolife2.png": "/webpage/static/media/LogoYoungInfolife2.99f136ca65679a3cb503.png",
     "index.html": "/webpage/index.html",
     "main.e3cee1b0.css.map": "/webpage/static/css/main.e3cee1b0.css.map",
-    "main.78a3bcb9.js.map": "/webpage/static/js/main.78a3bcb9.js.map"
+    "main.d1daccf0.js.map": "/webpage/static/js/main.d1daccf0.js.map"
   },
   "entrypoints": [
     "static/css/main.e3cee1b0.css",
-    "static/js/main.78a3bcb9.js"
+    "static/js/main.d1daccf0.js"
   ]
 }
