@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import {TwitterTimelineEmbed} from "react-twitter-embed";
 
-function News() {
+function Events() {
 
     return (
         <Box>
@@ -14,13 +14,7 @@ function News() {
 
             <Box>
 
-                <Container component="main" maxWidth="lg" sx={{color:"white", paddingTop:"3%"}}>
-                    <TwitterTimelineEmbed
-                        sourceType="profile"
-                        screenName="QbioGroup"
-                        options={{height: 500}}
-                    />
-                </Container>
+               
             </Box>
 
 
@@ -29,4 +23,4 @@ function News() {
     );
 }
 
-export default News;
+export default Events;
