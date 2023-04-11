@@ -50,7 +50,7 @@ function HomePage() {
                 <Grid item xs={12} md={5} lg={4}>
                     <TwitterTimelineEmbed
                         sourceType="profile"
-                        screenName="QbioGroup"
+                        screenName="young_infolife"
                         options={{height: 600}}
                     />
                 </Grid>
