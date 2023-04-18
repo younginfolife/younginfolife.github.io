@@ -14,7 +14,6 @@ function HomePage() {
 
             <Navbar/>
 
-        <body>
         {/*<Grid container spacing={2}>*/}
         {/*    <Grid item xs={8}>*/}
         {/*        <Item>xs=8</Item>*/}
@@ -30,7 +29,7 @@ function HomePage() {
         {/*    </Grid>*/}
         {/*</Grid>*/}
         <Container component="main" maxWidth="lg">
-            <Grid container spacing={3}>
+            <Grid container spacing={3} sx={{paddingTop:"2%"}}>
                 <Grid item xs={12} md={7} lg={7} color={"white"}>
                     <Box>
 
@@ -59,7 +58,6 @@ function HomePage() {
                 </Grid>
             </Grid>
         </Container>
-        </body>
             <Footer/>
         </Box>
     );
