@@ -14,7 +14,7 @@ import './Navbar.css';
 import {Grid} from "@mui/material";
 import {useNavigate} from "react-router-dom";
 
-const pages = ['Home', 'La nostra squadra', 'Contatti', 'Eventi'];
+const pages = ['Home', 'La nostra squadra', 'Contatti', 'Eventi', 'Attività'];
 
 function Navbar() {
     const navigate = useNavigate();
@@ -37,6 +37,9 @@ function Navbar() {
                 break
             case 3:
                 navigate('/events')
+                break
+            case 4:
+                navigate('/activity')
                 break
             default:
                 console.log("Error")
