@@ -86,12 +86,14 @@ const Team = () => {
                     <h1>TEAM</h1>
                     {/* <img src={map} id={"Map"}/> */}
                 <MapComponent/>
-                <h2>Direttivo esecutivo supremo</h2>
+                <h2>Direttivo:</h2>
                 <ul>
-                    <li>Giacomo Baruzzo: </li>
-                    <li>Vincenzo Bonnici </li>
-                    <li>Simone Pernice</li>
+                    <li>Giacomo Baruzzo: giacomo.baruzzo@unipd.it</li>
+                    <li>Vincenzo Bonnici: vincenzo.bonnici@unipr.it </li>
+                    <li>Simone Pernice: simone.pernice@unito.it</li>
                 </ul>
+
+                {/* responsabile di area di servizio */}
                 
                 </Container>
             </Box>
