@@ -1,9 +1,10 @@
 .footer {
-    position: fixed;
     bottom: 0;
     background-color: rgba(33, 33, 51, 0);
-    padding: 20px;
     width: 100%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin-top: auto;
 }
 
 #icon {

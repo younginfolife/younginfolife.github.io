@@ -55,16 +55,6 @@ const Contacts = () => {
                 <Container component="main" maxWidth="sm">
                     <h1>Contattaci</h1>
 
-                    <Card sx={{
-                        padding: '3%',
-                        textAlign: 'center',
-                        border: '3px solid',
-                        borderColor: '#EEEEEE',
-                        borderRadius: '12%'
-                    }}>
-                        <p>Compilare questo <a href={"https://docs.google.com/forms/d/e/1FAIpQLScnU4WZapdWtZn5Bl6r6adntj8XL7MRhsWFyfsCKNon72xxmQ/viewform?usp=sf_link"}>form</a> per iscriverti al gruppo.</p>
-                    </Card>
-
                     <h3>Scrivici un messaggio</h3>
 
                     <Card sx={{
