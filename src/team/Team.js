@@ -1,4 +1,4 @@
-import {React, useState, useRef, useEffect} from 'react'
+import {React, Fragment} from 'react'
 // import {Box} from "@mui/material";
 import {Box, Card, Grid} from "@mui/material";
 import Navbar from "../navbar/Navbar";
@@ -6,9 +6,20 @@ import Footer from "../footer/Footer";
 import './Team.css'
 import Container from "@mui/material/Container";
 // import map from "../images/mappa.png";
-import {MapContainer, useMap, GeoJSON, TileLayer} from 'react-leaflet'
-import L, { marker, LatLngExpression } from 'leaflet';
+import {MapContainer, useMap } from 'react-leaflet'
+import L from 'leaflet';
 import 'leaflet.markercluster'
+
+// import * as React from 'react';
+// import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+// import Divider from '@mui/material/Divider';
+import ListItemText from '@mui/material/ListItemText';
+// import ListItemButton  from '@mui/material/ListItemButton';
+import ListItemAvatar from '@mui/material/ListItemAvatar';
+import Avatar from '@mui/material/Avatar';
+import Typography from '@mui/material/Typography';
+
 
 
 import {member_list} from "./members"
@@ -78,7 +89,7 @@ const MapComponent = () => {
     }
 
     return (
-        <MapContainer style={{height:777, width:777}}>
+        <MapContainer style={{height:867, width:777}}>
             <InitMap/>
         </MapContainer>
     );
@@ -94,37 +105,35 @@ const Team = () => {
                     <Grid>
                         <MapComponent/>
                     </Grid>
-                    <Grid item xs={12} md={7} lg={4} color={"red"} width={"100%"}>
+
+                    <Grid item xs={12} md={7} lg={4} width={"100%"}>
                         <Card sx={{
                             padding: '5%',
                             border: '3px solid',
                             borderColor: '#EEEEEE',
-                            borderRadius: '5%', 
-                            // backgroundColor: "red"
+                            borderRadius: '5%',
                         }}>
                             <h2>Direttivo</h2>
-                            <ul>
-                                <li>Giacomo Baruzzo: giacomo.baruzzo@unipd.it</li>
-                                <li>Vincenzo Bonnici: vincenzo.bonnici@unipr.it </li>
-                                <li>Simone Pernice: simone.pernice@unito.it</li>
-                            </ul>
+                            <MemberItem name="Giacomo Baruzzo" email="giacomo.baruzzo@unipd.it"/>
+                            <MemberItem name="Vincenzo Bonnici" email="vincenzo.bonnici@unipr.it"/>
+                            <MemberItem name="Simone Pernice" email="simone.pernice@unito.it"/>
+                            
                         </Card>
                         <Card sx={{
                             marginTop: "5%",
-                            padding: '10%',
+                            padding: '5%',
                             border: '3px solid',
                             borderColor: '#EEEEEE',
                             borderRadius: '5%'
                         }}>
                             <h2>Social media managers</h2>
-                            <ul>
-                                <li>Mikele Milia: Facebook</li>
-                                <li>Alessio Funari: LinkedIn</li>
-                                <li>Eva Viesi: Telegram</li>
-                                <li>Pasquale Sibilio: Twitter</li>
-                                <li>Salvatore Calderaro: Youtube</li> 
-                            </ul>
+                            <MemberItem name="Mikele Milia" email="Facebook"/>
+                            <MemberItem name="Alessio Funari" email="LinkedIn"/>
+                            <MemberItem name="Eva Viesi" email="Telegram"/>
+                            <MemberItem name="Pasquale Sibilio" email="Twitter"/>
+                            <MemberItem name="Salvatore Calderaro" email="Youtube"/>
                         </Card>
+                   
                     </Grid>
                 </Grid>
             </Container>
@@ -134,4 +143,30 @@ const Team = () => {
 }
 
 
-export default Team
+function MemberItem({ name, email }) {
+    return (
+        <ListItem alignItems="flex-start">
+        <ListItemAvatar>
+          <Avatar alt={name} src="ipotetico_avatar.jpg"/>
+        </ListItemAvatar>
+        <ListItemText
+          primary={name}
+          secondary={
+            <Fragment>
+              <Typography
+                sx={{ display: 'inline' }}
+                component="span"
+                variant="body2"
+                color="text.primary"
+              >
+              </Typography>
+              {email}
+              
+            </Fragment>
+          }
+        />
+      </ListItem>
+    );
+}
+
+export default Team;
