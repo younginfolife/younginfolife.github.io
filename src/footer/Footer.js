@@ -2,7 +2,7 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import './Footer.css'
-import {Email, FacebookOutlined, GitHub, LinkedIn, RssFeedOutlined, Telegram, Twitter} from "@mui/icons-material";
+import {Email, FacebookOutlined, GitHub, LinkedIn, RssFeedOutlined, Telegram, Twitter, YouTube} from "@mui/icons-material";
 
 const Footer = () => {
     const year = new Date().getFullYear();
@@ -41,6 +41,12 @@ const Footer = () => {
                     <a id={"icon"} href={"https://www.linkedin.com/in/young-infolife-522834272/"}>
                         <LinkedIn/>
                     </a>
+
+                    <a id={"icon"} href={"https://www.youtube.com/@younginfolife"}>
+                        <YouTube/>
+                    </a>
+
+                    
                 </Box>
 
                 <Typography textAlign="center" color={"white"}> {`© ${year} Younginfolife`}</Typography>

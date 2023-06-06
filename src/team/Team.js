@@ -10,6 +10,9 @@ import {MapContainer, useMap } from 'react-leaflet'
 import L from 'leaflet';
 import 'leaflet.markercluster'
 
+import ReactDOM from "react-dom";
+import ReactDOMServer from "react-dom/server";
+
 // import * as React from 'react';
 // import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -80,7 +83,8 @@ const MapComponent = () => {
 
 
     const GetPopup = ( record ) => {
-        return  "<h3>"+record.nome + " " + record.cognome+"</h3>";
+        const full_name = record.nome + " " + record.cognome;
+        return ReactDOMServer.renderToString(<MemberItem name={full_name} content={record.email} />);
     }
 
 
@@ -114,9 +118,9 @@ const Team = () => {
                             borderRadius: '5%',
                         }}>
                             <h2>Direttivo</h2>
-                            <MemberItem name="Giacomo Baruzzo" email="giacomo.baruzzo@unipd.it"/>
-                            <MemberItem name="Vincenzo Bonnici" email="vincenzo.bonnici@unipr.it"/>
-                            <MemberItem name="Simone Pernice" email="simone.pernice@unito.it"/>
+                            <MemberItem name="Giacomo Baruzzo" content="giacomo.baruzzo@unipd.it"/>
+                            <MemberItem name="Vincenzo Bonnici" content="vincenzo.bonnici@unipr.it"/>
+                            <MemberItem name="Simone Pernice" content="simone.pernice@unito.it"/>
                             
                         </Card>
                         <Card sx={{
@@ -127,11 +131,11 @@ const Team = () => {
                             borderRadius: '5%'
                         }}>
                             <h2>Social media managers</h2>
-                            <MemberItem name="Mikele Milia" email="Facebook"/>
-                            <MemberItem name="Alessio Funari" email="LinkedIn"/>
-                            <MemberItem name="Eva Viesi" email="Telegram"/>
-                            <MemberItem name="Pasquale Sibilio" email="Twitter"/>
-                            <MemberItem name="Salvatore Calderaro" email="Youtube"/>
+                            <MemberItem name="Alessio Funari" content="Facebook"/>
+                            <MemberItem name="Pasquale Sibilio" content="LinkedIn"/>
+                            <MemberItem name="Eva Viesi" content="Telegram"/>
+                            <MemberItem name="Mikele Milia" content="Twitter"/>
+                            <MemberItem name="Salvatore Calderaro" content="Youtube"/>
                         </Card>
                    
                     </Grid>
@@ -143,7 +147,7 @@ const Team = () => {
 }
 
 
-function MemberItem({ name, email }) {
+function MemberItem({ name, content }) {
     return (
         <ListItem alignItems="flex-start">
         <ListItemAvatar>
@@ -160,7 +164,7 @@ function MemberItem({ name, email }) {
                 color="text.primary"
               >
               </Typography>
-              {email}
+              {content}
               
             </Fragment>
           }
