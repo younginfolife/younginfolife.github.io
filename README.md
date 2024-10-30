@@ -1,0 +1,1 @@
+# Young InfoLife Splash Page
