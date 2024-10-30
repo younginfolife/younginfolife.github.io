@@ -1,4 +1,5 @@
 import { defineCollection, defineConfig } from "@content-collections/core";
+import { compileMarkdown } from "@content-collections/markdown";
 
 const people = defineCollection({
 	name: "people",
@@ -15,21 +16,29 @@ const people = defineCollection({
 const events = defineCollection({
 	name: "events",
 	directory: "data/events",
-	include: "**/*.yaml",
+	include: "**/*.md",
 	schema: (z) => ({
 		name: z.string(),
 		description: z.string(),
 		location: z.string().optional(),
 		website: z.string().url().optional(),
-		dateStart: z.string().optional(),
-		dateEnd: z.string().optional(),
+		dateStart: z.string().date(),
+		dateEnd: z.string().date().optional(),
 	}),
+	transform: async (event, context) => {
+		const html = await compileMarkdown(context, event);
+		return {
+			...event,
+			id: event._meta.fileName.split('.')[0],
+			html,
+		}
+	}
 })
 
 const publications = defineCollection({
 	name: "publications",
 	directory: "data/publications",
-	include: "**/*.yaml",
+	include: "**/*.md",
 	schema: (z) => ({
 		Authors: z.string(),
 		Title: z.string(),
