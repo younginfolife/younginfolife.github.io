@@ -37,6 +37,10 @@ const allNavigationLinks: NavigationLinks[] = [
 	{
 		title: "Publicazioni",
 		href: "/publications",
+	},
+	{
+		title: "Iscriviti",
+		href: "/apply",
 	}
 ]
 
