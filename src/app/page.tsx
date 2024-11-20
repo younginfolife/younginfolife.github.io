@@ -1,8 +1,6 @@
-import ContactElement from "@/components/ContactElement";
+import AppSocials from "@/components/app-socials";
 import { Card } from "@/components/ui/card";
-import { allPeople } from "content-collections";
 import Image from "next/image";
-import Link from "next/link";
 
 interface Highlight {
   title: string;
@@ -42,25 +40,11 @@ export default function Home() {
         </div>
       </article>
       <article className="prose text-balance">
-        <h2>La nostra squadra</h2>
-        <div className="relative not-prose mb-8">
-          <ul className="flex flex-col gap-4">
-            {allPeople.slice(0, 3).map((e, key) => {
-              return <li key={key}>
-                <ContactElement {...e} />
-              </li>
-            })}
-
-          </ul>
-          <div className="w-full from-background to-transparent bg-gradient-to-t bottom-0 h-16 absolute">
-          </div>
-          <Link href="/about" className="absolute px-4 py-2 bg-white shadow-lg rounded-full left-1/2 -translate-x-1/2 font-bold">
-            Mostra Tutti
-          </Link>
-        </div>
+        <h2>Seguici sui social</h2>
+        {/*TODO: Social icons*/}
       </article>
       <article className="prose text-balance">
-        <h2>Seguici sui social</h2>
+        <AppSocials />
       </article>
     </main>
   );
