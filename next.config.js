@@ -5,6 +5,9 @@ import { withContentCollections } from "@content-collections/next";
 const nextConfig = {
 	output: "export",
 	basePath: "/webpage",
+	images: {
+		unoptimized: true,
+	}
 };
 
 export default withContentCollections(nextConfig);
