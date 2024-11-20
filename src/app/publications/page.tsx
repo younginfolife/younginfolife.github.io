@@ -4,7 +4,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className="max-w-3xl mx-auto w-full p-4 space-y-2">
+    <div className="max-w-prose mx-auto w-full p-4 space-y-2">
       <h1 className="text-3xl font-bold">Publicazioni</h1>
       <ul className="space-y-4 max-w-full">
         {allPublications.map((e, i) => {
