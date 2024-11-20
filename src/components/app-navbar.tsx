@@ -47,8 +47,10 @@ const allNavigationLinks: NavigationLinks[] = [
 export const AppNavbar = () => {
 	const pathname = usePathname();
 	return (
-		<nav className="mx-auto bg-background sticky top-0 z-10 rounded-full mt-2 my-8 shadow-lg max-w-fit flex">
-			<Image src="/logo.png" alt="Logo" width={100} height={20} />
+		<nav className="mx-auto bg-background sticky top-0 z-10 rounded-full mt-2 my-8 shadow-lg max-w-fit flex items-center">
+			<div className="relative w-24 h-8 block mx-4">
+				<Image src="/logo.png" alt="Logo" fill />
+			</div>
 			<NavigationMenu className="mx-auto p-2">
 				<NavigationMenuList>
 					{allNavigationLinks.map((e, key) =>
