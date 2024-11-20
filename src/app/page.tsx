@@ -30,7 +30,7 @@ export default function Home() {
           {highlights.map((e, i) =>
             <Card key={i} className="w-full p-2 space-y-4 text-center flex flex-col items-center">
               <div className="relative w-24 h-24">
-                <Image src={e.image} alt={e.title} layout="fill" />
+                <Image src={e.image} alt={e.title} layout="fill" unoptimized />
               </div>
               <h2 className="font-bold text-xl">
                 {e.title}
