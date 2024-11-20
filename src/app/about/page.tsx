@@ -29,16 +29,16 @@ export default function AboutPage() {
           bg-black text-white font-bold rounded-full" onClick={() => {
               setSearchTerm('')
               setFilteredPersons(allPeople)
-            }}>Pulisci</button> :
+            }}>Clear</button> :
             <></>}
         </div>
         <ul className="flex flex-col gap-2">
           {filteredPersons.map((person, index) => (
             <li key={index}><ContactElement {...person} /></li>
           ))}
-          {filteredPersons.length === 0 ? <p>No person found matching "{searchTerm}".</p> : <></>}
+          {filteredPersons.length === 0 ? <p>No person found matching {searchTerm}.</p> : <></>}
         </ul>
-      </main>
+      </main >
     </div>
   )
 }
