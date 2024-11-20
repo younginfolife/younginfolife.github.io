@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "type": "module",
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
     "@icons-pack/react-simple-icons": "^10.1.0",
