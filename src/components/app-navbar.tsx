@@ -3,9 +3,11 @@
 import React from 'react'
 import {
 	NavigationMenu,
+	NavigationMenuContent,
 	NavigationMenuItem,
 	NavigationMenuLink,
 	NavigationMenuList,
+	NavigationMenuTrigger,
 	navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu'
 import Link from 'next/link'
@@ -51,19 +53,43 @@ export const AppNavbar = () => {
 			<div className="relative w-24 h-8 block mx-4">
 				<Image src="/logo.png" alt="Logo" fill />
 			</div>
+			<div className="block md:hidden">
+			</div>
 			<NavigationMenu className="mx-auto p-2">
-				<NavigationMenuList>
-					{allNavigationLinks.map((e, key) =>
-						<NavigationMenuItem key={key}>
-							<Link href={e.href} legacyBehavior passHref>
-								<NavigationMenuLink className={navigationMenuTriggerStyle()} active={pathname === e.href}>
-									{e.title}
-								</NavigationMenuLink>
-							</Link>
-						</NavigationMenuItem>
-					)}
-				</NavigationMenuList>
+				<div className="md:block hidden">
+					<NavigationMenuList>
+						{allNavigationLinks.map((e, key) =>
+							<NavigationMenuItem key={key}>
+								<Link href={e.href} legacyBehavior passHref>
+									<NavigationMenuLink className={navigationMenuTriggerStyle()} active={pathname === e.href}>
+										{e.title}
+									</NavigationMenuLink>
+								</Link>
+							</NavigationMenuItem>
+						)}
+					</NavigationMenuList>
+				</div>
+				<div className="block md:hidden">
+					<NavigationMenu>
+						<NavigationMenuList>
+							<NavigationMenuItem>
+								<NavigationMenuTrigger
+									className={navigationMenuTriggerStyle()}
+								>Menu</NavigationMenuTrigger>
+								<NavigationMenuContent>
+									{allNavigationLinks.map((e, key) =>
+										<Link href={e.href} legacyBehavior passHref key={key}>
+											<NavigationMenuLink className={navigationMenuTriggerStyle()} active={pathname === e.href}>
+												{e.title}
+											</NavigationMenuLink>
+										</Link>
+									)}
+								</NavigationMenuContent>
+							</NavigationMenuItem>
+						</NavigationMenuList>
+					</NavigationMenu>
+				</div>
 			</NavigationMenu>
-		</nav>
+		</nav >
 	)
 }
