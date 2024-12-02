@@ -19,8 +19,6 @@ const page = () => {
                   <h2>{e.name}</h2>
                   <p>
                     {e.description}
-                    <br />
-                    <Link href={e.website!}>Website</Link>
                   </p>
                 </Card>
               </Link>
