@@ -32,7 +32,7 @@ export default function AboutPage() {
             }}>Clear</button> :
             <></>}
         </div>
-        <ul className="flex flex-col gap-2">
+        <ul className="grid flex-col gap-4 grid-cols-2">
           {filteredPersons.map((person, index) => (
             <li key={index}><ContactElement {...person} /></li>
           ))}

@@ -2,15 +2,14 @@ import React from 'react'
 
 interface ContactElementProps {
 	name: string;
-	email: string;
+	location: string;
 }
-export default function ContactElement({ name, email }: ContactElementProps) {
+export default function ContactElement({ name, location }: ContactElementProps) {
 	return (
 		<div className="flex flex-row items-center gap-2">
-			<div className="w-16 h-16 bg-gray-200 rounded-full" />
 			<div>
 				<p className="font-bold">{name}</p>
-				<p className="">{email}</p>
+				<p className="">{location}</p>
 			</div>
 		</div>
 	)
