@@ -16,9 +16,28 @@ export default function AboutPage() {
     setFilteredPersons(allPeople.filter(person => person.name.toLowerCase().includes(term.toLowerCase())));
   };
 
+  const direttivoPeople = allPeople.filter((person) => person.occupation === 'direttivo')
+  const smmPeople = allPeople.filter((person) => person.occupation === 'smm')
+
   return (
     <div className="max-w-prose mx-auto flex flex-col gap-8 w-full px-4 md:p-0">
       <main className="space-y-4">
+	    <div className="prose">
+          <h2>Direttivo</h2>
+        </div>
+		<ul className="grid flex-col gap-4 ">
+          {direttivoPeople.map((person, index) => (
+            <li key={index}><ContactElement {...person} /></li>
+          ))}
+        </ul>
+		<div className="prose">
+          <h2>Gestori Web e Social</h2>
+        </div>
+		<ul className="grid flex-col gap-4 grid-cols-2">
+          {smmPeople.map((person, index) => (
+            <li key={index}><ContactElement {...person} /></li>
+          ))}
+        </ul>
         <div className="prose">
           <h2>La nostra squadra</h2>
         </div>
