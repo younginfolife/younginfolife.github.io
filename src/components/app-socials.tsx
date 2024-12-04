@@ -37,17 +37,15 @@ const allSocials: SocialNetwork[] = [
 
 export default function AppSocials() {
 	return (
-		<Card>
-			<ul className="flex gap-2 justify-evenly">
-				{allSocials.map((social, index) =>
-					<a href={social.url} key={index} >
-						<div className="flex flex-row gap-2">
-							<span>{social.icon}</span>
-						</div>
-					</a>
-				)}
-			</ul>
-		</Card>
+		<ul className="flex space-x-4">
+			{allSocials.map((social, index) =>
+				<a href={social.url} key={index} >
+					<div className="flex flex-row gap-2">
+						<span>{social.icon}</span>
+					</div>
+				</a>
+			)}
+		</ul>
 	)
 }
 

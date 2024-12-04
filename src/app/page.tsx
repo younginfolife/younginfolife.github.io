@@ -17,6 +17,7 @@ export default function Home() {
       <article className="prose text-balance">
         <h1>Sei un giovane appassionato
           di <span className="text-brand">bioinformatica</span>?</h1>
+        <AppSocials />
         <p>
           Entra nel mondo di CINI Young-InfoLife, la piattaforma creata da
           giovani (bio)informatici per giovani (bio)informatici!
@@ -38,13 +39,6 @@ export default function Home() {
             </Card>
           )}
         </div>
-      </article>
-      <article className="prose text-balance">
-        <h2>Seguici sui social</h2>
-        {/*TODO: Social icons*/}
-      </article>
-      <article className="prose text-balance">
-        <AppSocials />
       </article>
     </main>
   );
