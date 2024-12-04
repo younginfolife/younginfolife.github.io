@@ -1,21 +1,21 @@
-import { Card } from '@/components/ui/card';
-import { allEvents } from 'content-collections';
-import Link from 'next/link';
-import { notFound } from 'next/navigation';
-import React from 'react'
+import { Card } from "@/components/ui/card";
+import { allEvents } from "content-collections";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import React from "react";
 
 export async function generateStaticParams() {
-  return allEvents.map(e => ({
-    eventID: e.id
-  }))
+  return allEvents.map((e) => ({
+    eventID: e.id,
+  }));
 }
 
-interface EventPageParams { eventID: string }
+interface EventPageParams {
+  eventID: string;
+}
 
 const EventPage = ({ params }: { params: EventPageParams }) => {
-  const event = allEvents.find(
-    event => event.id === params.eventID
-  );
+  const event = allEvents.find((event) => event.id === params.eventID);
   if (!event) {
     notFound();
   }
@@ -35,9 +35,8 @@ const EventPage = ({ params }: { params: EventPageParams }) => {
         </p>
       </Card>
       <div dangerouslySetInnerHTML={{ __html: event.html }} />
-
     </div>
-  )
-}
+  );
+};
 
 export default EventPage;

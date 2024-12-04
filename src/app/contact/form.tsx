@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { zodResolver } from '@hookform/resolvers/zod'
-import React from 'react'
-import { useForm } from 'react-hook-form'
+import { zodResolver } from "@hookform/resolvers/zod";
+import React from "react";
+import { useForm } from "react-hook-form";
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
@@ -12,16 +12,16 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
 
-import { z } from "zod"
-import { Textarea } from '@/components/ui/textarea'
+import { z } from "zod";
+import { Textarea } from "@/components/ui/textarea";
 
 const formSchema = z.object({
   email: z.string().email(),
   message: z.string(),
-})
+});
 
 export const ContactForm = () => {
   const form = useForm<z.infer<typeof formSchema>>({
@@ -30,9 +30,9 @@ export const ContactForm = () => {
       email: "",
       message: "",
     },
-  })
+  });
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
+    console.log(values);
   }
   return (
     <Form {...form}>
@@ -63,8 +63,10 @@ export const ContactForm = () => {
             </FormItem>
           )}
         />
-        <Button type="submit" className="bg-brand">Invia</Button>
+        <Button type="submit" className="bg-brand">
+          Invia
+        </Button>
       </form>
     </Form>
-  )
-}
+  );
+};

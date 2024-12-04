@@ -1,7 +1,7 @@
-import React from 'react'
-import { ContactForm } from './form'
-import { Card } from '@/components/ui/card'
-import { notFound } from 'next/navigation'
+import React from "react";
+import { ContactForm } from "./form";
+import { Card } from "@/components/ui/card";
+import { notFound } from "next/navigation";
 
 export default function page() {
   // TODO: remove this redirection in the next deployment of this site.
@@ -13,7 +13,5 @@ export default function page() {
         <ContactForm />
       </Card>
     </div>
-  )
+  );
 }
-
-

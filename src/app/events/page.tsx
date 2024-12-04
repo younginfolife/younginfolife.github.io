@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from 'react'
+import React from "react";
 import { allEventsSortedByDate } from "./sorted";
 import { Card } from "@/components/ui/card";
 
@@ -17,16 +17,15 @@ const page = () => {
                     {e.dateStart} {e.dateEnd}
                   </span>
                   <h2>{e.name}</h2>
-                  <p>
-                    {e.description}
-                  </p>
+                  <p>{e.description}</p>
                 </Card>
               </Link>
-            </li>)
+            </li>
+          );
         })}
       </ul>
     </div>
-  )
-}
+  );
+};
 
 export default page;

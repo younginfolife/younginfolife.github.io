@@ -1,6 +1,6 @@
-import { Card } from "@/components/ui/card"
-import { allPublications } from "content-collections"
-import React from 'react'
+import { Card } from "@/components/ui/card";
+import { allPublications } from "content-collections";
+import React from "react";
 
 const page = () => {
   return (
@@ -11,18 +11,23 @@ const page = () => {
           return (
             <li key={i}>
               <Card className="prose !space-y-2 p-4 mx-auto">
-                <p><b>{e.Year}</b> <span>{e.Publisher}</span> - <span>{e.Publication}{" "}{e.Volume}</span></p>
+                <p>
+                  <b>{e.Year}</b> <span>{e.Publisher}</span> -{" "}
+                  <span>
+                    {e.Publication} {e.Volume}
+                  </span>
+                </p>
                 <h3>{e.Title}</h3>
                 <p>
                   <span>{e.Authors.split(";").join("")}</span>
                 </p>
               </Card>
-            </li>)
+            </li>
+          );
         })}
       </ul>
-
-    </div >
-  )
-}
+    </div>
+  );
+};
 
 export default page;
