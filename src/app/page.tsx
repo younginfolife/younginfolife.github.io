@@ -36,7 +36,7 @@ export default function Home() {
               className="w-full p-2 space-y-4 text-center flex flex-col items-center"
             >
               <div className="relative w-24 h-24">
-                <Image src={e.image} alt={e.title} layout="fill" unoptimized />
+                <Image src={e.image} alt={e.title} layout="fill" />
               </div>
               <h2 className="font-bold text-xl">{e.title}</h2>
             </Card>
