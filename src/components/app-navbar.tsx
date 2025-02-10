@@ -25,7 +25,7 @@ const allNavigationLinks: NavigationLinks[] = [
     href: "/",
   },
   {
-    title: "About",
+    title: "Storia",
     href: "/about",
   },
   {
