@@ -57,26 +57,26 @@ const page = () => {
 				</p>
 				<p>
 					Tre principali gruppi tematici sono stati recentemente attivati all’interno del laboratorio:
-					<li>
-						<ul>
+					<ul>
+						<li>
 							<b>Young - InfoLife working group</b> - si occupa di fornire una piattaforma
 							per studenti, dottorandi e giovani ricercatori nel campo della&apos;bioinformatica, che sono interessati e coinvolti nei
 							temi trattati dal laboratorio nazionale InfoLife. Gestito da giovani (bio)informatici, Young-InfoLife promuove il
 							networking e la formazione dei suoi membri attraverso iniziative quali l&apos;organizzazione di eventi e conferenze, la
 							conduzione di corsi e seminari, la pubblicazione di opportunità come tesi, progetti e posizioni lavorative, nonché
 							la diffusione di contenuti scientifici tramite un canale YouTube dedicato.
-						</ul>
-						<ul>
+						</li>
+						<li>
 							<b>Performance working group</b> - il cui scopo è creare un collaborazione con il CINI System and Service Quality
 							Working Group per lavorare in sinergia su tematiche di performance legate ad aspetti di bioinformatica.
-						</ul>
-						<ul>
+						</li>
+						<li>
 							<b>Bioinformatics Bachelor&apos;s and PhD degrees working grou</b> - creato per collaborare con il gruppo Training and
 							T eaching della Società Italiana di Bioinformatica (BITS) e il
 							Laboratorio Nazionale CINI “Informatica e Scuola” su questioni riguardanti la didattica, specialmente a livello
 							accademico, riguardanti la Bioinformatica.
-						</ul>
-					</li>
+						</li>
+					</ul>
 				</p>
 			</article>
 		</div>
