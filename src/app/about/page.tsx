@@ -10,12 +10,12 @@ const page = () => {
 			<article className="prose pb-32">
 				<h1 className="text-3xl font-bold">Storia e Attività del Laboratorio CINI Infolife</h1>
 				<p>
-					Il laboratorio CINI InfoLife è stato istituito nel 2015 sotto la guida del Prof. Enrico Nardelli con l'intento di fornire
+					Il laboratorio CINI InfoLife è stato istituito nel 2015 sotto la guida del Prof. Enrico Nardelli con l&apos;intento di fornire
 					un sostegno strategico allo sviluppo delle metodologie informatiche nel campo delle Scienze della Vita.
-					L'obiettivo è promuovere l'integrazione tra lo sviluppo di metodologie computazionali e la loro applicazione in
+					L&apos;obiettivo è promuovere l&apos;integrazione tra lo sviluppo di metodologie computazionali e la loro applicazione in
 					domini biologici e/o clinici, facilitando la collaborazione tra ricercatori informatici, biologi e medici. Questo
 					approccio collaborativo mira a migliorare la comprensione dei sistemi biologici e a sviluppare soluzioni
-					informatiche innovative per affrontare problemi biologici e clinici complessi. Nonostante l'Informatica abbia
+					informatiche innovative per affrontare problemi biologici e clinici complessi. Nonostante l&apos;Informatica abbia
 					contribuito significativamente alla rivoluzione post-genomica definendo metodologie computazionali per la
 					gestione e analisi dei dati, i meccanismi alla base dei sistemi biologici sono ancora poco chiari. Mettere a fuoco
 					con precisione tali meccanismi informazionali costituisce una delle sfide più impegnative che la bioinformatica
@@ -34,7 +34,7 @@ const page = () => {
 					Learning, Network Analysis, e Deep Learning; (iv) Sistemi complessi e proprietà emergenti; (v) Infrastrutture,
 					Strumenti, Architetture e Servizi per la Bioinformatica per garantire analisi riproducibili assicurando che ogni
 					artefatto (modelli, codice, configurazioni e dati) sia rintracciabile, accessibile, interoperabile e riusabile secondo i
-					principi FAIR dell'Open Science, e che ogni decisione presa a valle di una predizione o di un’analisi sia il più
+					principi FAIR dell&apos;Open Science, e che ogni decisione presa a valle di una predizione o di un’analisi sia il più
 					possibile equa e libera da pregiudizi (fairness delle analisi/predizioni).
 				</p>
 				<p>
@@ -42,11 +42,11 @@ const page = () => {
 					pan-omici (cioè genoma, trascrittoma, epigenoma, proteoma, metaboloma e microbioma) e dati clinici; (ii) Studio
 					dei sistemi biologici a diversi livelli (molecolare, cellulare, tissutale, organico, individuale, di popolazione,
 					ecosistemico) mediante metodi e modelli computazionali; (iii) Epidemiologia computazionale; (iv) Gestione e
-					analisi di Risorse Microbiche nei settori della Salute, dell'Agroalimentare e Zootecnia, dell'Ambiente e
-					dell'Energia.
+					analisi di Risorse Microbiche nei settori della Salute, dell&apos;Agroalimentare e Zootecnia, dell&apos;Ambiente e
+					dell&apos;Energia.
 				</p>
 				<p>
-					A livello internazionale, il Laboratorio contribuisce, attraverso i suoi membri, all'organizzazione di workshop e
+					A livello internazionale, il Laboratorio contribuisce, attraverso i suoi membri, all&apos;organizzazione di workshop e
 					scuole e alla creazione di sezioni speciali in diverse conferenze di rilievo nel campo della bioinformatica e delle
 					scienze della vita. Queste iniziative offrono opportunità preziose per la condivisione delle ultime ricerche e lo
 					sviluppo di collaborazioni internazionali. Inoltre, il laboratorio sponsorizza attivamente la partecipazione dei suoi
@@ -60,9 +60,9 @@ const page = () => {
 					<li>
 						<ul>
 							<b>Young - InfoLife working group</b> - si occupa di fornire una piattaforma
-							per studenti, dottorandi e giovani ricercatori nel campo della'bioinformatica, che sono interessati e coinvolti nei
+							per studenti, dottorandi e giovani ricercatori nel campo della&apos;bioinformatica, che sono interessati e coinvolti nei
 							temi trattati dal laboratorio nazionale InfoLife. Gestito da giovani (bio)informatici, Young-InfoLife promuove il
-							networking e la formazione dei suoi membri attraverso iniziative quali l'organizzazione di eventi e conferenze, la
+							networking e la formazione dei suoi membri attraverso iniziative quali l&apos;organizzazione di eventi e conferenze, la
 							conduzione di corsi e seminari, la pubblicazione di opportunità come tesi, progetti e posizioni lavorative, nonché
 							la diffusione di contenuti scientifici tramite un canale YouTube dedicato.
 						</ul>
@@ -71,7 +71,7 @@ const page = () => {
 							Working Group per lavorare in sinergia su tematiche di performance legate ad aspetti di bioinformatica.
 						</ul>
 						<ul>
-							<b>Bioinformatics Bachelor's and PhD degrees working grou</b> - creato per collaborare con il gruppo Training and
+							<b>Bioinformatics Bachelor&apos;s and PhD degrees working grou</b> - creato per collaborare con il gruppo Training and
 							T eaching della Società Italiana di Bioinformatica (BITS) e il
 							Laboratorio Nazionale CINI “Informatica e Scuola” su questioni riguardanti la didattica, specialmente a livello
 							accademico, riguardanti la Bioinformatica.
