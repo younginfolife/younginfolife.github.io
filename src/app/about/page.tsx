@@ -1,97 +1,86 @@
-"use client";
+import AppSocials from "@/components/app-socials";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import Link from "next/link";
+import React from "react";
 
-import ContactElement from "@/components/ContactElement";
-import React, { useState } from "react";
-import { allPeople, Person } from "content-collections";
-
-export default function AboutPage() {
-	const [searchTerm, setSearchTerm] = useState<string>("");
-	const [filteredPersons, setFilteredPersons] = useState<Person[]>(allPeople);
-
-	const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
-		const term = event.target.value;
-		setSearchTerm(term);
-		setFilteredPersons(
-			allPeople.filter((person) =>
-				person.name.toLowerCase().includes(term.toLowerCase()),
-			),
-		);
-	};
-
-	const direttivoPeople = allPeople.filter(
-		(person) => person.occupation === "direttivo",
-	);
-	const smmPeople = allPeople.filter((person) => person.occupation === "smm");
-
+const page = () => {
 	return (
-		<div className="max-w-prose mx-auto flex flex-col gap-8 w-full px-4 md:p-0">
-			<main className="space-y-4">
-				<div className="prose">
-					<h2>Direttivo Infolife</h2>
-				</div>
-				<ul className="grid flex-col gap-4 ">
-					<ContactElement name="Marco Beccuti" location="Università di Torino" />
-					<ContactElement name="Vincenzo Bonnici" location="Università di Parma" />
-				</ul>
-				<div className="prose">
-					<h2>Direttivo Young</h2>
-				</div>
-				<ul className="grid flex-col gap-4 ">
-					{direttivoPeople.map((person, index) => (
-						<li key={index}>
-							<ContactElement {...person} />
-						</li>
-					))}
-				</ul>
-				<div className="prose">
-					<h2>Gestori Web e Social</h2>
-				</div>
-				<ul className="grid flex-col gap-4 grid-cols-2">
-					{smmPeople.map((person, index) => (
-						<li key={index}>
-							<ContactElement {...person} />
-						</li>
-					))}
-				</ul>
-				<div className="prose pt-10">
-					<h2>La nostra squadra Young</h2>
-				</div>
-				<div className="relative">
-					<input
-						type="text"
-						placeholder="Nome Cognome"
-						className="px-4 py-2 rounded-full w-full bg-white shadow"
-						value={searchTerm}
-						onChange={handleSearch}
-					/>
-					{searchTerm.length > 0 ? (
-						<button
-							className="absolute end-0 px-4 py-2
-          bg-black text-white font-bold rounded-full"
-							onClick={() => {
-								setSearchTerm("");
-								setFilteredPersons(allPeople);
-							}}
-						>
-							Clear
-						</button>
-					) : (
-						<></>
-					)}
-				</div>
-				<ul className="grid flex-col gap-4 grid-cols-2 pb-32">
-					{filteredPersons.map((person, index) => (
-						<li key={index}>
-							<ContactElement {...person} />
-						</li>
-					))}
-					{filteredPersons.length === 0 ? (
-						<p>No person found matching {searchTerm}.</p>
-					) : (
-						<></>
-					)}
-				</ul>
-			</main>
+		<div className="max-w-3xl mx-auto p-2 prose">
+			<article className="prose pb-32">
+				<h1 className="text-3xl font-bold">Storia e Attività del Laboratorio CINI Infolife</h1>
+				<p>
+					Il laboratorio CINI InfoLife è stato istituito nel 2015 sotto la guida del Prof. Enrico Nardelli con l'intento di fornire
+					un sostegno strategico allo sviluppo delle metodologie informatiche nel campo delle Scienze della Vita.
+					L'obiettivo è promuovere l'integrazione tra lo sviluppo di metodologie computazionali e la loro applicazione in
+					domini biologici e/o clinici, facilitando la collaborazione tra ricercatori informatici, biologi e medici. Questo
+					approccio collaborativo mira a migliorare la comprensione dei sistemi biologici e a sviluppare soluzioni
+					informatiche innovative per affrontare problemi biologici e clinici complessi. Nonostante l'Informatica abbia
+					contribuito significativamente alla rivoluzione post-genomica definendo metodologie computazionali per la
+					gestione e analisi dei dati, i meccanismi alla base dei sistemi biologici sono ancora poco chiari. Mettere a fuoco
+					con precisione tali meccanismi informazionali costituisce una delle sfide più impegnative che la bioinformatica
+					affronta oggi.
+				</p>
+				<p>
+					Da quando è stato istituito, il laboratorio ha visto un costante aumento del numero di affiliati, che attualmente
+					supera i 300 membri distribuiti su 38 nodi in tutto il territorio nazionale.
+				</p>
+				<p>
+					Le attività del laboratorio si concentrano su due dimensioni principali: quella metodologica e quella applicativa.
+				</p>
+				<p>
+					La dimensione metodologica comprende diverse categorie: (i) Formalismi e simulazione computazionale; (ii)
+					Metodi algoritmici, combinatori, statistici e analitici; (iii) Computational Intelligence, Data Mining, Machine
+					Learning, Network Analysis, e Deep Learning; (iv) Sistemi complessi e proprietà emergenti; (v) Infrastrutture,
+					Strumenti, Architetture e Servizi per la Bioinformatica per garantire analisi riproducibili assicurando che ogni
+					artefatto (modelli, codice, configurazioni e dati) sia rintracciabile, accessibile, interoperabile e riusabile secondo i
+					principi FAIR dell'Open Science, e che ogni decisione presa a valle di una predizione o di un’analisi sia il più
+					possibile equa e libera da pregiudizi (fairness delle analisi/predizioni).
+				</p>
+				<p>
+					La dimensione applicativa comprende le seguenti categorie: (i) Gestione, analisi ed integrazione di dati
+					pan-omici (cioè genoma, trascrittoma, epigenoma, proteoma, metaboloma e microbioma) e dati clinici; (ii) Studio
+					dei sistemi biologici a diversi livelli (molecolare, cellulare, tissutale, organico, individuale, di popolazione,
+					ecosistemico) mediante metodi e modelli computazionali; (iii) Epidemiologia computazionale; (iv) Gestione e
+					analisi di Risorse Microbiche nei settori della Salute, dell'Agroalimentare e Zootecnia, dell'Ambiente e
+					dell'Energia.
+				</p>
+				<p>
+					A livello internazionale, il Laboratorio contribuisce, attraverso i suoi membri, all'organizzazione di workshop e
+					scuole e alla creazione di sezioni speciali in diverse conferenze di rilievo nel campo della bioinformatica e delle
+					scienze della vita. Queste iniziative offrono opportunità preziose per la condivisione delle ultime ricerche e lo
+					sviluppo di collaborazioni internazionali. Inoltre, il laboratorio sponsorizza attivamente la partecipazione dei suoi
+					membri a conferenze di prestigio, contribuendo così a promuovere la visibilità della ricerca svolta e a facilitare lo
+					scambio di conoscenze e idee con la comunità scientifica globale. Oltre a ciò, organizza corsi specialisticiche
+					forniscono aggiornamenti sulle nuove tecnologie e metodologie nel campo della bioinformatica, consentendo ai
+					partecipanti di ampliare le proprie competenze e rimanere al passo con gli sviluppi più recenti.
+				</p>
+				<p>
+					Tre principali gruppi tematici sono stati recentemente attivati all’interno del laboratorio:
+					<li>
+						<ul>
+							<b>Young - InfoLife working group</b> - si occupa di fornire una piattaforma
+							per studenti, dottorandi e giovani ricercatori nel campo della'bioinformatica, che sono interessati e coinvolti nei
+							temi trattati dal laboratorio nazionale InfoLife. Gestito da giovani (bio)informatici, Young-InfoLife promuove il
+							networking e la formazione dei suoi membri attraverso iniziative quali l'organizzazione di eventi e conferenze, la
+							conduzione di corsi e seminari, la pubblicazione di opportunità come tesi, progetti e posizioni lavorative, nonché
+							la diffusione di contenuti scientifici tramite un canale YouTube dedicato.
+						</ul>
+						<ul>
+							<b>Performance working group</b> - il cui scopo è creare un collaborazione con il CINI System and Service Quality
+							Working Group per lavorare in sinergia su tematiche di performance legate ad aspetti di bioinformatica.
+						</ul>
+						<ul>
+							<b>Bioinformatics Bachelor's and PhD degrees working grou</b> - creato per collaborare con il gruppo Training and
+							T eaching della Società Italiana di Bioinformatica (BITS) e il
+							Laboratorio Nazionale CINI “Informatica e Scuola” su questioni riguardanti la didattica, specialmente a livello
+							accademico, riguardanti la Bioinformatica.
+						</ul>
+					</li>
+				</p>
+			</article>
 		</div>
 	);
-}
+};
+
+export default page;

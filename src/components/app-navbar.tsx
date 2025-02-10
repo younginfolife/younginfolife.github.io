@@ -25,8 +25,12 @@ const allNavigationLinks: NavigationLinks[] = [
     href: "/",
   },
   {
-    title: "Squadra",
+    title: "About",
     href: "/about",
+  },
+  {
+    title: "Squadra",
+    href: "/team",
   },
   //{
   //	title: "Contatti",
