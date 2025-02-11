@@ -24,6 +24,10 @@ export default function AboutPage() {
 	const direttivoPeopleYoung = allPeople.filter(
 		(person) => person.occupation === "direttivo" && person.level === 'young',
 	);
+
+	const comitatoPeople = allPeople.filter(
+		(person) => person.occupation === 'comitato'
+	)
 	
 	const smmPeople = allPeople.filter((person) => person.occupation === "smm");
 
@@ -38,6 +42,16 @@ export default function AboutPage() {
 				</div>
 				<ul className="grid flex-col gap-4 ">
 					{direttivoPeopleSenior.map((person, index) => (
+						<li key={index}>
+							<ContactElement {...person} />
+						</li>
+					))}
+				</ul>
+				<div className="prose">
+					<h2>Comitato Infolife</h2>
+				</div>
+				<ul className="grid flex-col gap-4 grid-cols-2">
+					{comitatoPeople.map((person, index) => (
 						<li key={index}>
 							<ContactElement {...person} />
 						</li>
