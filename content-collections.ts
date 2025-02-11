@@ -7,9 +7,10 @@ const people = defineCollection({
   include: "**/*.yaml",
   schema: (z) => ({
     name: z.string(),
-    email: z.string().email(),
+    email: z.string().email().optional(),
     occupation: z.enum(["direttivo", "smm"]).optional(),
     location: z.string(),
+	level: z.enum(['young', 'senior'])
   }),
 });
 

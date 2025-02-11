@@ -6,22 +6,29 @@ import { allPeople, Person } from "content-collections";
 
 export default function AboutPage() {
 	const [searchTerm, setSearchTerm] = useState<string>("");
-	const [filteredPersons, setFilteredPersons] = useState<Person[]>(allPeople);
+	// const [filteredPersons, setFilteredPersons] = useState<Person[]>(allPeople);
 
-	const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
-		const term = event.target.value;
-		setSearchTerm(term);
-		setFilteredPersons(
-			allPeople.filter((person) =>
-				person.name.toLowerCase().includes(term.toLowerCase()),
-			),
-		);
-	};
+	// const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
+	// 	const term = event.target.value;
+	// 	setSearchTerm(term);
+	// 	setFilteredPersons(
+	// 		allPeople.filter((person) =>
+	// 			person.name.toLowerCase().includes(term.toLowerCase()),
+	// 		),
+	// 	);
+	// };
 
-	const direttivoPeople = allPeople.filter(
-		(person) => person.occupation === "direttivo",
+	const direttivoPeopleSenior = allPeople.filter(
+		(person) => person.occupation === "direttivo" && person.level === 'senior',
 	);
+	const direttivoPeopleYoung = allPeople.filter(
+		(person) => person.occupation === "direttivo" && person.level === 'young',
+	);
+	
 	const smmPeople = allPeople.filter((person) => person.occupation === "smm");
+
+	const youngPeople = allPeople.filter((person) => person.level === 'young')
+	const seniorPeople = allPeople.filter((person) => person.level === 'senior')
 
 	return (
 		<div className="max-w-prose mx-auto flex flex-col gap-8 w-full px-4 md:p-0">
@@ -30,14 +37,17 @@ export default function AboutPage() {
 					<h2>Direttivo Infolife</h2>
 				</div>
 				<ul className="grid flex-col gap-4 ">
-					<ContactElement name="Marco Beccuti" location="Università di Torino" />
-					<ContactElement name="Vincenzo Bonnici" location="Università di Parma" />
+					{direttivoPeopleSenior.map((person, index) => (
+						<li key={index}>
+							<ContactElement {...person} />
+						</li>
+					))}
 				</ul>
 				<div className="prose">
 					<h2>Direttivo Young</h2>
 				</div>
 				<ul className="grid flex-col gap-4 ">
-					{direttivoPeople.map((person, index) => (
+					{direttivoPeopleYoung.map((person, index) => (
 						<li key={index}>
 							<ContactElement {...person} />
 						</li>
@@ -54,9 +64,19 @@ export default function AboutPage() {
 					))}
 				</ul>
 				<div className="prose pt-10">
+					<h2>La nostra squadra Infolife</h2>
+				</div>
+				<ul className="grid flex-col gap-4 grid-cols-2 pb-15">
+					{seniorPeople.map((person, index) => (
+						<li key={index}>
+							<ContactElement {...person} />
+						</li>
+					))}
+				</ul>
+				<div className="prose pt-10">
 					<h2>La nostra squadra Young</h2>
 				</div>
-				<div className="relative">
+				{/* <div className="relative">
 					<input
 						type="text"
 						placeholder="Nome Cognome"
@@ -78,18 +98,18 @@ export default function AboutPage() {
 					) : (
 						<></>
 					)}
-				</div>
+				</div> */}
 				<ul className="grid flex-col gap-4 grid-cols-2 pb-32">
-					{filteredPersons.map((person, index) => (
+					{youngPeople.map((person, index) => (
 						<li key={index}>
 							<ContactElement {...person} />
 						</li>
 					))}
-					{filteredPersons.length === 0 ? (
+					{/* {filteredPersons.length === 0 ? (
 						<p>No person found matching {searchTerm}.</p>
 					) : (
 						<></>
-					)}
+					)} */}
 				</ul>
 			</main>
 		</div>
