@@ -9,4 +9,4 @@ dateStart: 2025-06-10
 
 I webinar saranno degli eventi live, accessibili tramite il canale youtube del gruppo Young-Infolife. Questi mirano alla preparazione dei partecipanti. Il BioHackaton invece, è l’evento proposto durante il meeting annuale della BITS, rappresenta quindi una challenge per sensibilizzare i partecipanti all’uso di strumenti e metodi FAIR per l’analisi di un dataset di Single cell RNA-seq.
 
-![Foto di gruppo](/events/BioHackathon/BioHackathon.png)
+![BioHackathon](/events/BioHackathon/BioHackathon.png)
