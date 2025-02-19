@@ -1,13 +1,9 @@
-import AppSocials from "@/components/app-socials";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import Link from "next/link";
 import React from "react";
 
 const page = () => {
 	return (
-		<div className="max-w-3xl mx-auto p-2 prose">
-			<article className="prose pb-32">
+		<div className="max-w-3xl mx-auto p-2">
+			<article className="prose pb-32 mx-auto">
 				<h1 className="text-3xl font-bold">Storia e Attività del Laboratorio CINI Infolife</h1>
 				<p>
 					Il laboratorio CINI InfoLife è stato istituito nel 2015 sotto la guida del Prof. Enrico Nardelli con l&apos;intento di fornire
