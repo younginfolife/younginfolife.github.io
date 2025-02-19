@@ -54,9 +54,9 @@ export const AppNavbar = () => {
   const pathname = usePathname();
   return (
     <nav className="mx-auto bg-background sticky top-0 z-10 rounded-full mt-2 my-8 shadow-lg max-w-fit flex items-center">
-      <div className="relative w-24 h-8 block mx-4">
+      <Link href="/" className="relative w-24 h-8 block mx-4">
         <Image src="/logo.png" alt="Logo" fill />
-      </div>
+      </Link>
       <div className="block md:hidden"></div>
       <NavigationMenu className="mx-auto p-2">
         <div className="md:block hidden">
