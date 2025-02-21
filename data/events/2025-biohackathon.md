@@ -28,8 +28,8 @@ dateStart: 2025-06-10
 
 ![BioHackathon](/events/2025BioHackathon/BioHackathon.png)
 
-Speakers: Simone Pernice, Giacomo Baruzzo, Giulia Cesaro, Ramona Palombo, Federica Rossi, Vincenzo Bonnici, Eva Viesi, Simone Avesani, Luca Alessandrì, Laura Veschetti, Elena Grassi
+**Speakers**: Simone Pernice, Giacomo Baruzzo, Giulia Cesaro, Ramona Palombo, Federica Rossi, Vincenzo Bonnici, Eva Viesi, Simone Avesani, Luca Alessandrì, Laura Veschetti, Elena Grassi
 
-Organizers: Luca Alessandrì, Giulia Cesaro, Simone Pernice, Matteo Pallocca, Federica Rossi, Veschetti Laura, Ramona Palombo, Mirko Treccani, Giacomo Baruzzo, Salvatore Calderaro, Eva Viesi
+**Organizers**: Luca Alessandrì, Giulia Cesaro, Simone Pernice, Matteo Pallocca, Federica Rossi, Veschetti Laura, Ramona Palombo, Mirko Treccani, Giacomo Baruzzo, Salvatore Calderaro, Eva Viesi
 
-Online streamers: Salvatore Calderaro
+**Online streamers**: Salvatore Calderaro
