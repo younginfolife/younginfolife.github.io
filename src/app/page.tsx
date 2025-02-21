@@ -1,4 +1,5 @@
 import AppSocials from "@/components/app-socials";
+import ImageCarousel from "@/components/ImageCarousel";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,7 +21,7 @@ export default function Home() {
 					Sei un giovane appassionato di{" "}
 					<span className="text-brand">bioinformatica</span>?
 				</h1>
-				<Image src={"/events/2024BITS-Trento/IMG_4429.jpg"} alt="" width={5000} height={500} />
+				<ImageCarousel />
 				<p>
 					Entra nel mondo di CINI Young-InfoLife, la piattaforma creata da
 					giovani (bio)informatici per giovani (bio)informatici!
