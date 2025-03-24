@@ -16,11 +16,11 @@ dateStart: 2025-06-10
 
 📅 Webinar schedule:
 
-- April 1 – Reproducibility, containerization, and HPC usage
-- April 15 – Single-cell RNA-seq: wet lab protocol and quality control
-- April 29 – Single-cell RNA-seq: computational methods (part 1)
-- May 13 – Single-cell RNA-seq: computational methods (part 2)
-- May 27 – Q&A + spoiler session
+- April 1 at 14:00 Italy time (CET/CEST)– Reproducibility, containerization, and HPC usage
+- April 15 at 14:00 Italy time (CET/CEST)– Single-cell RNA-seq: wet lab protocol and quality control
+- April 29 at 14:00 Italy time (CET/CEST)– Single-cell RNA-seq: computational methods (part 1)
+- May 13 at 14:00 Italy time (CET/CEST)– Single-cell RNA-seq: computational methods (part 2)
+- May 27 at 14:00 Italy time (CET/CEST)– Q&A + spoiler session
 
 📩 Stay updated! Subscribe to our mailing list to receive all the latest news: [Click here to reach the form](https://forms.gle/ZSA11FSSkVMqNKye9)
 
