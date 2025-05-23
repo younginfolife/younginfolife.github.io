@@ -6,11 +6,22 @@ location: Napoli
 dateStart: 2025-06-10
 ---
 
-📅 When? June 10, 2025 – A live hackathon on the eve of BITS 2025 (June 11-13)
+📅 When? 14.00pm June 10, 2025 – A live hackathon on the eve of BITS 2025 (June 11-13)
 
 📍 Where? Faculty of Biotechnology, Via Tommaso De Amicis, 95, 80131 Naples, Italy
 
 🔎 The challenge: Get ready to dive into single-cell RNA-seq data analysis! The exact theme will be revealed during the in-person event.
+
+📝 Registration is now open!
+👉 Fill out the form by June 1, 2025: https://forms.gle/ZSA11FSSkVMqNKye9
+
+Participants will be grouped into diverse teams combining different backgrounds, skills, and institutions. This approach promotes collaboration, peer learning, and innovative problem-solving.
+
+🏆 Awards & Symposium
+The awards ceremony will take place during the closing session of BITS 2025, on June 13.
+
+In the afternoon of June 13, don’t miss the special joint symposium organized by CINI Young-InfoLife, RSG-Italy, and Young BITS, highlighting the next generation of researchers in bioinformatics.
+[More about the symposium](https://www.google.com/url?q=https://bioinformatics.it/bits2025/1772/symposium&source=gmail-imap&ust=1748540680000000&usg=AOvVaw1YnWdymDuwJuw6SDjQ1pcS)
 
 💻 Prepare yourself! Before the competition, there will be preparation live-streamed webinars, with recordings available on the Young-Infolife YouTube channel: [https://www.youtube.com/@younginfolife](https://www.youtube.com/@younginfolife)
 
