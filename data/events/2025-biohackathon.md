@@ -13,7 +13,7 @@ dateStart: 2025-06-10
 🔎 The challenge: Get ready to dive into single-cell RNA-seq data analysis! The exact theme will be revealed during the in-person event.
 
 📝 Registration is now open!
-👉 Fill out the form by June 1, 2025: https://forms.gle/ZSA11FSSkVMqNKye9
+👉 Fill out the [form](https://forms.gle/ZSA11FSSkVMqNKye9) by June 1, 2025.
 
 Participants will be grouped into diverse teams combining different backgrounds, skills, and institutions. This approach promotes collaboration, peer learning, and innovative problem-solving.
 
