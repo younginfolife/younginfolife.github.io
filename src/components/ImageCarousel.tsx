@@ -4,15 +4,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-const images = [
-  "/carousel/1.jpg",
-  "/carousel/2.jpg",
-  "/carousel/3.jpg",
-  "/carousel/4.JPG",
-  "/carousel/5.jpeg",
-];
-
-const ImageCarousel = () => {
+const ImageCarousel = ({ images }: { images: string[] }) => {
   return (
     <Swiper
       modules={[Pagination, Autoplay]}

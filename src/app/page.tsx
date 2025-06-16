@@ -2,12 +2,19 @@ import AppSocials from "@/components/app-socials";
 import ImageCarousel from "@/components/ImageCarousel";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
-import Link from "next/link";
 
 interface Highlight {
   title: string;
   image: string;
 }
+
+const images = [
+  "/carousel/1.jpg",
+  "/carousel/2.jpg",
+  "/carousel/3.jpg",
+  "/carousel/4.JPG",
+  "/carousel/5.jpeg",
+];
 
 export default function Home() {
   const highlights: Highlight[] = [
@@ -21,7 +28,7 @@ export default function Home() {
           Sei un giovane appassionato di{" "}
           <span className="text-brand">bioinformatica</span>?
         </h1>
-        <ImageCarousel />
+        <ImageCarousel images={images} />
         <p>
           Entra nel mondo di CINI Young-InfoLife, la piattaforma creata da
           giovani (bio)informatici per giovani (bio)informatici!

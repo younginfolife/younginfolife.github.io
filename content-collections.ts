@@ -23,6 +23,7 @@ const events = defineCollection({
     description: z.string(),
     location: z.string().optional(),
     website: z.string().url().optional(),
+    carouselImages: z.array(z.string()).optional(),
     dateStart: z.string().date(),
     dateEnd: z.string().date().optional(),
   }),

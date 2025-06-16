@@ -1,3 +1,4 @@
+import ImageCarousel from "@/components/ImageCarousel";
 import { Card } from "@/components/ui/card";
 import { allEvents } from "content-collections";
 import Link from "next/link";
@@ -36,6 +37,7 @@ const EventPage = ({ params }: { params: EventPageParams }) => {
           )}
         </p>
       </Card>
+      <ImageCarousel images={event.carouselImages || []} />
       <div dangerouslySetInnerHTML={{ __html: event.html }} />
     </div>
   );
