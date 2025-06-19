@@ -4,7 +4,7 @@ event: First International BioHackathon of BITS-2025
 description: CINI Young-InfoLife, RSG-Italy, and Young BITS invite you to the "First International Biohackathon of BITS", an exciting team-based bioinformatics challenge in collaboration with the BITS 2025 conference in Naples and the HPC4AI computing center of the University of Turin.
 location: Napoli
 dateStart: 2025-06-10
-carouselImages:-
+carouselImages:
   - /events/2025BioHackathon/12d48d39-1f82-451c-8ce8-067177d64a6e.JPG
   - /events/2025BioHackathon/1749570802856.jpg
   - /events/2025BioHackathon/1749570802875.jpg
