@@ -1,7 +1,6 @@
 import ImageCarousel from "@/components/ImageCarousel";
-import { Card } from "@/components/ui/card";
+import Image from "next/image";
 import { allEvents } from "content-collections";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import React from "react";
 
@@ -16,29 +15,36 @@ interface EventPageParams {
 }
 
 const EventPage = ({ params }: { params: EventPageParams }) => {
-  const event = allEvents.find((event) => event.id === params.eventID);
-  if (!event) {
+  const e = allEvents.find((event) => event.id === params.eventID);
+  if (!e) {
     notFound();
   }
 
   return (
     <div className="prose mx-auto pb-32">
-      <h1>{event.name}</h1>
-      <Card className="prose !space-y-2 p-4 rounded-md mx-auto">
-        <span>
-          {event.dateStart} {event.dateEnd}
-        </span>
-        <h2>{event.name}</h2>
-        <p>
-          {event.description}
-          <br />
-          {event.website !== undefined && (
-            <Link href={event.website}>Website</Link>
-          )}
-        </p>
-      </Card>
-      <ImageCarousel images={event.carouselImages || []} />
-      <div dangerouslySetInnerHTML={{ __html: event.html }} />
+      <h1>{e.name}</h1>
+      <div className="not-prose">
+        <div className="mx-auto flex flex-row items-center gap-6">
+          <div className="w-24 h-24 flex items-center justify-center flex-shrink-0 bg-gray-50 rounded relative">
+            {e.logo && (
+              <Image
+                src={e.logo}
+                fill
+                alt={e.name}
+                className="object-contain rounded"
+              />
+            )}
+          </div>
+          <div className="flex flex-col justify-center flex-1 min-w-0">
+            <div className="text-sm text-gray-500 truncate">
+              {e.dateStart} {e.dateEnd}
+            </div>
+            <p className="text-gray-700">{e.description}</p>
+          </div>
+        </div>
+      </div>
+      <ImageCarousel images={e.carouselImages || []} />
+      <div dangerouslySetInnerHTML={{ __html: e.html }} />
     </div>
   );
 };
