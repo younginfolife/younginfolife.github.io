@@ -40,7 +40,7 @@ const EventPage = ({ params }: { params: EventPageParams }) => {
               {e.dateStart} {e.dateEnd}
             </div>
             <p className="text-gray-700">{e.description}</p>
-            {e.link && (
+            {e.website && (
               <a
                 href={e.website}
                 target="_blank"
