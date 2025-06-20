@@ -30,6 +30,7 @@ const page = () => {
                         {e.dateEnd
                           ? `From ${e.dateStart} to ${e.dateEnd}`
                           : e.dateStart}
+                        </div>s
                     </div>
                     <h2 className="text-xl font-semibold">{e.name}</h2>
                     <p className="text-gray-700">{e.description}</p>
