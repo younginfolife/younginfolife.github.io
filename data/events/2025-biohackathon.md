@@ -5,6 +5,7 @@ description: CINI Young-InfoLife, RSG-Italy, and Young BITS invite you to the "F
 long_description:
 location: Napoli
 dateStart: 2025-06-10
+logo: /logos/biohackLOGO.png
 carouselImages:
   - /events/2025BioHackathon/12d48d39-1f82-451c-8ce8-067177d64a6e.JPG
   - /events/2025BioHackathon/1749570802856.jpg
