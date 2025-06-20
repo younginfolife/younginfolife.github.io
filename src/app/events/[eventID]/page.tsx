@@ -46,6 +46,7 @@ const EventPage = ({ params }: { params: EventPageParams }) => {
       <ImageCarousel images={e.carouselImages || []} />
       <div dangerouslySetInnerHTML={{ __html: e.html }} />
     </div>
+    <p className="text-gray-700">{e.long_description}</p>
   );
 };
 
