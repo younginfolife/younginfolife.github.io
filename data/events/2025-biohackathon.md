@@ -5,7 +5,6 @@ description: CINI Young-InfoLife, RSG-Italy, and Young BITS invite you to the "F
 long_description:
 location: Napoli
 dateStart: 2025-06-10
-logo: /logos/biohackLOGO.png
 carouselImages:
   - /events/2025BioHackathon/12d48d39-1f82-451c-8ce8-067177d64a6e.JPG
   - /events/2025BioHackathon/1749570802856.jpg
@@ -17,6 +16,7 @@ carouselImages:
   - /events/2025BioHackathon/IMG_0869.jpg
   - /events/2025BioHackathon/WinnerrsBiohacClust.png
   - /events/2025BioHackathon/WinnerrsBiohacRep.png
+logo: /logos/biohackLOGO.png
 ---
 
 📅 **When?** 14:00 – June 10, 2025 – A live hackathon on the eve of BITS 2025 (June 11–13)
