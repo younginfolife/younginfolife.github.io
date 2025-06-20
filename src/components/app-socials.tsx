@@ -37,7 +37,7 @@ const allSocials: SocialNetwork[] = [
     icon: <SiTelegram />,
   },
   {
-    url: "https://www.linkedin.com/in/young-infolife-522834272/",
+    url: "https://www.linkedin.com/company/younginfolife/",
     name: "LinkedIn",
     icon: <SiLinkedin />,
   },
