@@ -37,7 +37,11 @@ const EventPage = ({ params }: { params: EventPageParams }) => {
           </div>
           <div className="flex flex-col justify-center flex-1 min-w-0">
             <div className="text-sm text-gray-500 truncate">
-              {e.dateStart} {e.dateEnd}
+              <div className="text-sm text-gray-500 truncate">
+                {e.dateEnd
+                  ? `From ${e.dateStart} to ${e.dateEnd}`
+                  : e.dateStart}
+              </div>
             </div>
             <p className="text-gray-700">{e.description}</p>
             {e.website && (
