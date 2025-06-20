@@ -26,7 +26,7 @@ const page = () => {
                   </div>
                   <div className="flex flex-col justify-center flex-1 min-w-0">
                     <div className="text-sm text-gray-500 truncate">
-                      {e.dateStart} {e.dateEnd}
+                      From {e.dateStart} to {e.dateEnd}
                     </div>
                     <h2 className="text-xl font-semibold">{e.name}</h2>
                     <p className="text-gray-700">{e.description}</p>
