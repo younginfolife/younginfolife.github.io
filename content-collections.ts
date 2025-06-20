@@ -21,7 +21,7 @@ const events = defineCollection({
   schema: (z) => ({
     name: z.string(),
     description: z.string(),
-    long_description: z.string(),
+    long_description: z.string().optional(),
     location: z.string().optional(),
     website: z.string().url().optional(),
     carouselImages: z.array(z.string()).optional(),
