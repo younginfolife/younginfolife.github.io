@@ -18,9 +18,12 @@ export default function AboutPage() {
   // 	);
   // };
 
-  const direttivoPeopleSenior = allPeople.filter(
+  const direttivoPeopleSenior = allPeople
+  .filter(
     (person) => person.occupation === "direttivo" && person.level === "senior",
-  );
+  )
+  .sort((a, b) => a.name.localeCompare(b.name));
+	
   const direttivoPeopleYoung = allPeople.filter(
     (person) => person.occupation === "direttivo" && person.level === "young",
   );
