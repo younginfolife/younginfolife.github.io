@@ -6,9 +6,7 @@ location: Padova
 website: https://younginfolife.github.io/events/2026-biohackathon
 dateStart: 2026-05-26
 dateEnd: 2026-05-27
-carouselImages:
 logo: /logos/biohackLOGO2026.png
 ---
-
 
 ![BioHackathon](/events/2026BioHackathon/Locandina.png)
