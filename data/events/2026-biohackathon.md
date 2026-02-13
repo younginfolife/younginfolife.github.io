@@ -9,3 +9,6 @@ dateEnd: 2026-05-27
 carouselImages:
 logo: /logos/biohackLOGO2026.png
 ---
+
+
+![BioHackathon](/events/2026BioHackathon/Locandina.png)
