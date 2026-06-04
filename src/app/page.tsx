@@ -9,6 +9,8 @@ interface Highlight {
 }
 
 const images = [
+  "/events/2026BioHackathon/IMG_20260527_123953.jpg",
+  "/events/2026BioHackathon/IMG_3142.jpg",
   "/events/2025CIBB-Milano/Group_cibb25.png",
   "/events/2024BITS-Napoli/IMG_4787.jpg",
   "/events/2025CIBB-Milano/gruppo.jpeg",
