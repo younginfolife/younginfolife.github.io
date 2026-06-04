@@ -6,11 +6,28 @@ location: Padova
 website: https://younginfolife.github.io/events/2026-biohackathon
 dateStart: 2026-05-26
 dateEnd: 2026-05-27
+carouselImages:
+  - /events/2026BioHackathon/IMG_1103.png
+  - /events/2026BioHackathon/IMG_1104.jpg
+  - /events/2026BioHackathon/IMG_20260526_191006_1.jpg
+  - /events/2026BioHackathon/IMG_20260527_105112.jpg
+  - /events/2026BioHackathon/IMG_20260527_123953.jpg
+  - /events/2026BioHackathon/Screenshot1.png
+  - /events/2026BioHackathon/Screenshot2.png
+  - /events/2026BioHackathon/Screenshot3.png
+  - /events/2026BioHackathon/Screenshot4.png
 logo: /logos/biohackLOGO2026.png
 ---
 
-![BioHackathon](/events/2026BioHackathon/Locandina.png)
+![BioHackathon](/events/2026BioHackathon/locandina2biohack.jpeg)
 
+## Event Summary
+
+The **Second International BioHackathon of BITS 2026** successfully took place in Padova on **May 26–27, 2026**, bringing together students and early-career researchers from different institutions and backgrounds to tackle the challenge of **reverse engineering biological networks from omics data**.
+
+The initiative combined a preparatory webinar series with a two-day hands-on competition, where participants worked in interdisciplinary teams on transcriptomic and metagenomic datasets, applying computational methods for biological network inference.
+
+The event was organized by **Young InfoLife**, **RSG-Italy**, and **BITS**, with computational support provided by the **HPC4AI infrastructure**.
 
 ## Structure of the initiative
 
@@ -21,6 +38,34 @@ These webinars are conceived as accessible, community-oriented events, intended 
 All webinars will be streamed live on the **Young InfoLife YouTube channel** and will remain available afterward for asynchronous viewing:
 
 **Live streaming:** [Young InfoLife YouTube channel](https://www.youtube.com/@younginfolife)
+
+## Results
+
+We would like to congratulate all participants for the quality of their work and collaborative spirit throughout the competition.
+
+### 🏆 Winning Team
+
+**Group 2**
+- Rida Hayat
+- Alessandro Leone
+- Margherita Morlacchi
+- Dhwani Solanki
+
+### 🌟 Honorable Mention – Best Performing Team in Reverse Engineering of a Bacterial Interaction Network
+
+**Group 5**
+- Aaron Costa
+- Matteo Meneghin
+- Matteo Spatafora
+- Karla Alejandra Ruiz Ceja
+
+### 🌟 Honorable Mention – Best Performing Team in Reverse Engineering of a Gene Regulatory Network
+
+**Group 2**
+- Rida Hayat
+- Alessandro Leone
+- Margherita Morlacchi
+- Dhwani Solanki
 
 ## Webinar series
 
@@ -102,19 +147,19 @@ During the contest, participants will be divided into **heterogeneous working gr
 
 The activity is intended not only as a competition, but also as an opportunity for **peer learning and interdisciplinary collaboration** among participants coming from biology, bioinformatics, statistics, data science, and related fields.
 
-## Dates and venue
+## Venue
 
-The BioHackathon will take place in **Padova** on:
+The BioHackathon was hosted at:
 
-- **26 May 2026**, approximately **14:30–18:30**
-- **27 May 2026**, approximately **08:30–12:30**
+**HUB – Università degli Studi di Padova**  
+Via Niccolò Tommaseo 59, 35131 Padova, Italy
 
-The venue is currently being finalized. We are considering either:
+The competition took place over two half-days:
 
-- **Torre Archimede** (Department of Mathematics), or
-- the new **Engineering Hub** building
+- **26 May 2026** (14:30–18:30)
+- **27 May 2026** (08:30–12:30)
 
-Both locations are close to the main conference venue.
+A networking aperitivo was held on the evening of May 26, offering participants an opportunity to meet and exchange ideas in an informal setting.
 
 A **social event with aperitivo** is also planned for the evening of **26 May 2026**, open to all participants and organizers.
 
@@ -124,11 +169,11 @@ Participation in both the preparatory webinar series and the BioHackathon requir
 
 ### Webinar mailing list registration  
 **15 March 2026 – 15 April 2026**  
-👉 [Register for the webinar series](https://forms.gle/uscYMjJh1srfiYbC6)
+👉 [Register for the webinar series]()
 
 ### BioHackathon registration  
 **9 April 2026 – 15 May 2026**  
-👉 [Register for the BioHackathon](https://forms.gle/kCBC5VWnK5RKmiM2A)
+👉 [Register for the BioHackathon]()
 
 
 ## Computational resources
@@ -169,8 +214,19 @@ The initiative is organized through the collaboration of several communities and
 - Lucia Ghiretti — Social Media Manager
 - Salvatore Calderaro — Streaming & Media Manager
 
-## Contact and updates
 
-Further details, registration links, and updates will be shared through the official channels of the organizers and on the Young InfoLife website.
+## Acknowledgements
 
-We look forward to welcoming students, early-career researchers, and all participants interested in biological network inference, omics data analysis, and collaborative bioinformatics.
+We would like to thank all participants, speakers, mentors, reviewers, and organizers who contributed to the success of the initiative.
+
+A special thanks to:
+
+- **ISCB RSG Italy** for sponsoring the coffee break and social aperitivo;
+- **BITS 2026 Conference** for hosting the BioHackathon within its conference program;
+- **HPC4AI** for providing the computational infrastructure used during the event.
+
+## Looking Forward
+
+The BioHackathon 2026 demonstrated the value of combining training, collaboration, and hands-on computational biology challenges to foster learning and community building.
+
+We look forward to future editions and to welcoming new participants to upcoming Young InfoLife initiatives.
