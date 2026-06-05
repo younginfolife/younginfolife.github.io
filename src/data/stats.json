@@ -1,0 +1,145 @@
+{
+  "total": 172,
+  "young": 128,
+  "senior": 44,
+  "youngByRole": [
+    {
+      "label": "PhD",
+      "count": 55
+    },
+    {
+      "label": "Post-Doc",
+      "count": 20
+    },
+    {
+      "label": "RTDa",
+      "count": 16
+    },
+    {
+      "label": "Assegnista",
+      "count": 10
+    },
+    {
+      "label": "Borsista",
+      "count": 9
+    },
+    {
+      "label": "Tesista",
+      "count": 8
+    },
+    {
+      "label": "Studente",
+      "count": 4
+    },
+    {
+      "label": "Ricercatore Sanitario",
+      "count": 3
+    },
+    {
+      "label": "Collaboratore Tecnico",
+      "count": 2
+    },
+    {
+      "label": "Associato",
+      "count": 1
+    }
+  ],
+  "youngByOccupation": [
+    {
+      "label": "Membro",
+      "count": 122
+    },
+    {
+      "label": "Web & Social",
+      "count": 4
+    },
+    {
+      "label": "Direttivo",
+      "count": 2
+    }
+  ],
+  "topCities": [
+    {
+      "label": "Torino",
+      "count": 36
+    },
+    {
+      "label": "Milano",
+      "count": 20
+    },
+    {
+      "label": "Roma",
+      "count": 20
+    },
+    {
+      "label": "Padova",
+      "count": 13
+    },
+    {
+      "label": "Verona",
+      "count": 9
+    },
+    {
+      "label": "Catania",
+      "count": 6
+    },
+    {
+      "label": "Pisa",
+      "count": 6
+    },
+    {
+      "label": "Napoli",
+      "count": 4
+    },
+    {
+      "label": "Trento",
+      "count": 4
+    },
+    {
+      "label": "Parma",
+      "count": 4
+    }
+  ],
+  "topAffiliations": [
+    {
+      "label": "Università di Torino",
+      "count": 33
+    },
+    {
+      "label": "Università di Padova",
+      "count": 13
+    },
+    {
+      "label": "Sapienza - Università di Roma",
+      "count": 10
+    },
+    {
+      "label": "Università di Verona",
+      "count": 9
+    },
+    {
+      "label": "Politecnico di Milano",
+      "count": 6
+    },
+    {
+      "label": "Università di Catania",
+      "count": 6
+    },
+    {
+      "label": "Università di Milano",
+      "count": 6
+    },
+    {
+      "label": "CNR",
+      "count": 5
+    },
+    {
+      "label": "Università di Pisa",
+      "count": 5
+    },
+    {
+      "label": "Università di Roma Tor Vergata",
+      "count": 5
+    }
+  ]
+}

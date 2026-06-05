@@ -8,9 +8,11 @@ const people = defineCollection({
   schema: (z) => ({
     name: z.string(),
     email: z.string().email().optional(),
-    occupation: z.optional(z.enum(["direttivo", "smm", "comitato", ""])),
+    occupation: z.optional(z.string()),
+    role: z.optional(z.string()),
     location: z.string(),
-    level: z.enum(["young", "senior"]),
+    affiliation: z.string().optional(),
+    level: z.enum(["young", "senior", ""]),
   }),
 });
 
