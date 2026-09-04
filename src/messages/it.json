@@ -1,0 +1,60 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "Storia",
+    "team": "Squadra",
+    "contact": "Contatti",
+    "events": "Eventi",
+    "publications": "Pubblicazioni",
+    "apply": "Iscriviti"
+  },
+  "home": {
+    "title": "Sei un giovane appassionato di ",
+    "bioinformaticaWord": "bioinformatica",
+    "titleEnd": "?",
+    "subtitle": "Entra nel mondo di CINI Young-InfoLife, la piattaforma creata da giovani (bio)informatici per giovani (bio)informatici!",
+    "description": "Connettiti con studenti, dottorandi e ricercatori come te, condividi la tua passione e accresci le tue competenze grazie a eventi, corsi, seminari e molto altro.",
+    "networking": "Networking",
+    "training": "Formazione",
+    "mission": "La Nostra Missione",
+    "missionText": "CINI Young-InfoLife è una piattaforma dedicata a promuovere la collaborazione e la condivisione della conoscenza tra giovani ricercatori in bioinformatica e biologia computazionale.",
+    "about": "Chi Siamo"
+  },
+  "about": {
+    "title": "Storia e Attività del Laboratorio CINI Infolife",
+    "established": "Il laboratorio CINI InfoLife è stato istituito nel 2015 sotto la guida del Prof. Enrico Nardelli con l'intento di fornire un sostegno strategico allo sviluppo delle metodologie informatiche nel campo delle Scienze della Vita. L'obiettivo è promuovere l'integrazione tra lo sviluppo di metodologie computazionali e la loro applicazione in domini biologici e/o clinici, facilitando la collaborazione tra ricercatori informatici, biologi e medici. Questo approccio collaborativo mira a migliorare la comprensione dei sistemi biologici e a sviluppare soluzioni informatiche innovative per affrontare problemi biologici e clinici complessi. Nonostante l'Informatica abbia contribuito significativamente alla rivoluzione post-genomica definendo metodologie computazionali per la gestione e analisi dei dati, i meccanismi alla base dei sistemi biologici sono ancora poco chiari. Mettere a fuoco con precisione tali meccanismi informazionali costituisce una delle sfide più impegnative che la bioinformatica affronta oggi.",
+    "growth": "Da quando è stato istituito, il laboratorio ha visto un costante aumento del numero di affiliati, che attualmente supera i 300 membri distribuiti su 38 nodi in tutto il territorio nazionale.",
+    "activities": "Le attività del laboratorio si concentrano su due dimensioni principali: quella metodologica e quella applicativa.",
+    "methodological": "La dimensione metodologica comprende diverse categorie: (i) Formalismi e simulazione computazionale; (ii) Metodi algoritmici, combinatori, statistici e analitici; (iii) Computational Intelligence, Data Mining, Machine Learning, Network Analysis, e Deep Learning; (iv) Sistemi complessi e proprietà emergenti; (v) Infrastrutture, Strumenti, Architetture e Servizi per la Bioinformatica per garantire analisi riproducibili assicurando che ogni artefatto (modelli, codice, configurazioni e dati) sia rintracciabile, accessibile, interoperabile e riusabile secondo i principi FAIR dell'Open Science, e che ogni decisione presa a valle di una predizione o di un'analisi sia il più possibile equa e libera da pregiudizi (fairness delle analisi/predizioni)."
+  },
+  "team": {
+    "title": "Squadra",
+    "members": "Membri",
+    "nodes": "Nodi",
+    "seniors": "Ricercatori Senior",
+    "young": "Giovani Ricercatori"
+  },
+  "events": {
+    "title": "Eventi",
+    "dateFrom": "Dal",
+    "dateTo": "al",
+    "visitWebsite": "Visita il sito dell'evento",
+    "location": "Luogo",
+    "date": "Data"
+  },
+  "publications": {
+    "title": "Pubblicazioni",
+    "authors": "Autori",
+    "year": "Anno",
+    "journal": "Rivista"
+  },
+  "apply": {
+    "title": "Iscriviti",
+    "description": "Unisciti alla comunità CINI Young-InfoLife"
+  },
+  "common": {
+    "loading": "Caricamento...",
+    "error": "Errore",
+    "notFound": "Pagina non trovata"
+  }
+}

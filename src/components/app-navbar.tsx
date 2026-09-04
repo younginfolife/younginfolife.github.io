@@ -13,45 +13,45 @@ import {
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import {useTranslations} from 'next-intl';
+import {LocaleSwitcher} from './LocaleSwitcher';
 
 interface NavigationLinks {
   title: string;
   href: string;
 }
 
-const allNavigationLinks: NavigationLinks[] = [
-  {
-    title: "Home",
-    href: "/",
-  },
-  {
-    title: "Storia",
-    href: "/about",
-  },
-  {
-    title: "Squadra",
-    href: "/team",
-  },
-  //{
-  //	title: "Contatti",
-  //	href: "/contact",
-  //},
-  {
-    title: "Eventi",
-    href: "/events",
-  },
-  {
-    title: "Publicazioni",
-    href: "/publications",
-  },
-  {
-    title: "Iscriviti",
-    href: "/apply",
-  },
-];
-
 export const AppNavbar = () => {
   const pathname = usePathname();
+  const t = useTranslations('navigation');
+  
+  const allNavigationLinks: NavigationLinks[] = [
+    {
+      title: t('home'),
+      href: "/",
+    },
+    {
+      title: t('about'),
+      href: "/about",
+    },
+    {
+      title: t('team'),
+      href: "/team",
+    },
+    {
+      title: t('events'),
+      href: "/events",
+    },
+    {
+      title: t('publications'),
+      href: "/publications",
+    },
+    {
+      title: t('apply'),
+      href: "/apply",
+    },
+  ];
+
   return (
     <nav className="mx-auto bg-background sticky top-0 z-10 rounded-full mt-2 my-8 shadow-lg max-w-fit flex items-center">
       <Link href="/" className="relative w-24 h-8 block mx-4">
@@ -73,6 +73,11 @@ export const AppNavbar = () => {
                 </Link>
               </NavigationMenuItem>
             ))}
+            <NavigationMenuItem>
+              <div className="ml-4 pl-4 border-l border-gray-300">
+                <LocaleSwitcher />
+              </div>
+            </NavigationMenuItem>
           </NavigationMenuList>
         </div>
         <div className="block md:hidden">
@@ -93,6 +98,9 @@ export const AppNavbar = () => {
                       </NavigationMenuLink>
                     </Link>
                   ))}
+                  <div className="p-2">
+                    <LocaleSwitcher />
+                  </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
             </NavigationMenuList>

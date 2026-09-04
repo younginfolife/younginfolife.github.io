@@ -1,0 +1,61 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "Story",
+    "team": "Team",
+    "contact": "Contact",
+    "events": "Events",
+    "publications": "Publications",
+    "apply": "Join Us"
+  },
+  "home": {
+    "title": "Are you a young ",
+    "bioinformaticaWord": "bioinformatics",
+    "titleMiddle": " enthusiast",
+    "titleEnd": "?",
+    "subtitle": "Enter the world of CINI Young-InfoLife, the platform created by young (bio)informaticians for young (bio)informaticians!",
+    "description": "Connect with students, PhD candidates and researchers like you, share your passion and enhance your skills through events, courses, seminars and much more.",
+    "networking": "Networking",
+    "training": "Training",
+    "mission": "Our Mission",
+    "missionText": "CINI Young-InfoLife is a platform dedicated to fostering collaboration and knowledge sharing among young researchers in bioinformatics and computational biology.",
+    "about": "About"
+  },
+  "about": {
+    "title": "History and Activities of CINI InfoLife Laboratory",
+    "established": "The CINI InfoLife laboratory was established in 2015 under the guidance of Prof. Enrico Nardelli with the aim of providing strategic support for the development of computational methodologies in the Life Sciences. The objective is to promote integration between the development of computational methodologies and their application in biological and/or clinical domains, facilitating collaboration between computer scientists, biologists and doctors. This collaborative approach aims to improve the understanding of biological systems and develop innovative computational solutions to tackle complex biological and clinical problems. Although Computing has significantly contributed to the post-genomic revolution by defining computational methodologies for data management and analysis, the mechanisms underlying biological systems remain unclear. Focusing precisely on such informational mechanisms is one of the most challenging tasks that bioinformatics faces today.",
+    "growth": "Since its establishment, the laboratory has seen a constant increase in the number of affiliates, which currently exceeds 300 members distributed across 38 nodes throughout the national territory.",
+    "activities": "Laboratory activities focus on two main dimensions: the methodological and the applicative.",
+    "methodological": "The methodological dimension includes several categories: (i) Formalisms and computational simulation; (ii) Algorithmic, combinatorial, statistical and analytical methods; (iii) Computational Intelligence, Data Mining, Machine Learning, Network Analysis, and Deep Learning; (iv) Complex systems and emergent properties; (v) Infrastructures, Tools, Architectures and Services for Bioinformatics to ensure reproducible analyses ensuring that every artifact (models, code, configurations and data) is traceable, accessible, interoperable and reusable according to FAIR principles of Open Science, and that every decision made based on a prediction or analysis is as fair as possible and free from bias (fairness of analyses/predictions)."
+  },
+  "team": {
+    "title": "Team",
+    "members": "Members",
+    "nodes": "Nodes",
+    "seniors": "Senior Researchers",
+    "young": "Young Researchers"
+  },
+  "events": {
+    "title": "Events",
+    "dateFrom": "From",
+    "dateTo": "to",
+    "visitWebsite": "Visit event website",
+    "location": "Location",
+    "date": "Date"
+  },
+  "publications": {
+    "title": "Publications",
+    "authors": "Authors",
+    "year": "Year",
+    "journal": "Journal"
+  },
+  "apply": {
+    "title": "Join Us",
+    "description": "Join the CINI Young-InfoLife community"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "notFound": "Page not found"
+  }
+}

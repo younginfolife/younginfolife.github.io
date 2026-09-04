@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { AppNavbar } from "@/components/app-navbar";
 
 export const metadata: Metadata = {
   title: "Young InfoLife",
@@ -15,7 +14,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="">
-        <AppNavbar />
         <div className="">{children}</div>
       </body>
     </html>
