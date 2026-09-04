@@ -42,7 +42,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <AppNavbar />
+          <AppNavbar locale={locale} />
           <div>{children}</div>
         </NextIntlClientProvider>
       </body>

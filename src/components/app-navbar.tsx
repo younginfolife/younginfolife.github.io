@@ -20,8 +20,11 @@ interface NavigationLinks {
   href: string;
 }
 
-export const AppNavbar = () => {
-  const locale = useLocale();
+interface AppNavbarProps {
+  locale: string;
+}
+
+export const AppNavbar = ({ locale }: AppNavbarProps) => {
   const t = useTranslations('navigation');
   
   const allNavigationLinks: NavigationLinks[] = [
