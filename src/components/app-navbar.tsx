@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -11,7 +11,6 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import Image from "next/image";
 import {useTranslations, useLocale} from 'next-intl';
 import {LocaleSwitcher} from './LocaleSwitcher';
@@ -22,14 +21,8 @@ interface NavigationLinks {
 }
 
 export const AppNavbar = () => {
-  const pathname = usePathname();
   const locale = useLocale();
   const t = useTranslations('navigation');
-  const [mounted, setMounted] = useState(false);
-  
-  useEffect(() => {
-    setMounted(true);
-  }, []);
   
   const allNavigationLinks: NavigationLinks[] = [
     {
@@ -58,12 +51,6 @@ export const AppNavbar = () => {
     },
   ];
 
-  const isActive = (href: string) => {
-    if (!mounted) return false;
-    const fullPath = `/${locale}${href}`;
-    return pathname === fullPath || pathname.endsWith(href);
-  };
-
   return (
     <nav className="mx-auto bg-background sticky top-0 z-10 rounded-full mt-2 my-8 shadow-lg max-w-fit flex items-center">
       <Link href="/" className="relative w-24 h-8 block mx-4">
@@ -78,7 +65,6 @@ export const AppNavbar = () => {
                 <Link href={e.href} legacyBehavior passHref>
                   <NavigationMenuLink
                     className={navigationMenuTriggerStyle()}
-                    active={isActive(e.href)}
                   >
                     {e.title}
                   </NavigationMenuLink>
@@ -104,7 +90,6 @@ export const AppNavbar = () => {
                     <Link href={e.href} legacyBehavior passHref key={key}>
                       <NavigationMenuLink
                         className={navigationMenuTriggerStyle()}
-                        active={isActive(e.href)}
                       >
                         {e.title}
                       </NavigationMenuLink>
