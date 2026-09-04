@@ -11,4 +11,4 @@ const nextConfig = {
   },
 };
 
-export default withNextIntl(withContentCollections(nextConfig));
+export default async () => withNextIntl(await withContentCollections(nextConfig));
