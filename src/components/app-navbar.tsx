@@ -12,7 +12,6 @@ import {
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
 import Image from "next/image";
-import {useTranslations, useLocale} from 'next-intl';
 import {LocaleSwitcher} from './LocaleSwitcher';
 
 interface NavigationLinks {
@@ -22,36 +21,35 @@ interface NavigationLinks {
 
 interface AppNavbarProps {
   locale: string;
+  labels?: {
+    home: string;
+    about: string;
+    team: string;
+    events: string;
+    publications: string;
+    apply: string;
+  };
 }
 
-export const AppNavbar = ({ locale }: AppNavbarProps) => {
-  const t = useTranslations('navigation');
+export const AppNavbar = ({ locale, labels }: AppNavbarProps) => {
+  const defaultLabels = {
+    home: locale === 'it' ? 'Home' : 'Home',
+    about: locale === 'it' ? 'Chi Siamo' : 'About',
+    team: locale === 'it' ? 'Team' : 'Team',
+    events: locale === 'it' ? 'Eventi' : 'Events',
+    publications: locale === 'it' ? 'Pubblicazioni' : 'Publications',
+    apply: locale === 'it' ? 'Candidati' : 'Apply',
+  };
+  
+  const t = labels || defaultLabels;
   
   const allNavigationLinks: NavigationLinks[] = [
-    {
-      title: t('home'),
-      href: "/",
-    },
-    {
-      title: t('about'),
-      href: "/about",
-    },
-    {
-      title: t('team'),
-      href: "/team",
-    },
-    {
-      title: t('events'),
-      href: "/events",
-    },
-    {
-      title: t('publications'),
-      href: "/publications",
-    },
-    {
-      title: t('apply'),
-      href: "/apply",
-    },
+    { title: t.home, href: "/" },
+    { title: t.about, href: "/about" },
+    { title: t.team, href: "/team" },
+    { title: t.events, href: "/events" },
+    { title: t.publications, href: "/publications" },
+    { title: t.apply, href: "/apply" },
   ];
 
   // Helper to create locale-aware paths
@@ -82,7 +80,7 @@ export const AppNavbar = ({ locale }: AppNavbarProps) => {
             ))}
             <NavigationMenuItem>
               <div className="ml-4 pl-4 border-l border-gray-300">
-                <LocaleSwitcher />
+                <LocaleSwitcher locale={locale} />
               </div>
             </NavigationMenuItem>
           </NavigationMenuList>
@@ -105,7 +103,7 @@ export const AppNavbar = ({ locale }: AppNavbarProps) => {
                     </Link>
                   ))}
                   <div className="p-2">
-                    <LocaleSwitcher />
+                    <LocaleSwitcher locale={locale} />
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>

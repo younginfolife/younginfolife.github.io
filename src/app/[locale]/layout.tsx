@@ -3,14 +3,22 @@ import {ReactNode} from 'react';
 import {routing} from '@/routing';
 import {NextIntlClientProvider} from 'next-intl';
 import {AppNavbar} from "@/components/app-navbar";
-import {getMessages} from 'next-intl/server';
+import {setRequestLocale} from 'next-intl/server';
+import enMessages from '@/messages/en.json';
+import itMessages from '@/messages/it.json';
 import '../globals.css';
+
 type Props = {
   children: ReactNode;
   params: {
     locale: string;
   };
 };
+
+const messages = {
+  en: enMessages,
+  it: itMessages,
+} as const;
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({locale}));
@@ -36,12 +44,15 @@ export default async function LocaleLayout({
     notFound();
   }
 
-  const messages = await getMessages();
+  // Set the locale for the request context
+  setRequestLocale(locale);
+
+  const localeMessages = messages[locale as keyof typeof messages];
 
   return (
     <html lang={locale}>
       <body>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider messages={localeMessages} locale={locale}>
           <AppNavbar locale={locale} />
           <div>{children}</div>
         </NextIntlClientProvider>

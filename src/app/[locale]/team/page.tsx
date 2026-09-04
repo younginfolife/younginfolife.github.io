@@ -1,11 +1,10 @@
-"use server";
+"use client";
 
 import ContactElement from "@/components/ContactElement";
 import React from "react";
 import { allPeople } from "content-collections";
 import ItalyMap from "@/components/ItalyMap";
 import stats from "@/data/stats.json";
-import {setRequestLocale} from 'next-intl/server';
 
 function SectionHeading({
   children,
@@ -207,9 +206,7 @@ function StatsSection() {
   );
 }
 
-export default async function TeamPage({params}: {params: {locale: string}}) {
-  setRequestLocale(params.locale);
-  
+export default function TeamPage({params}: {params: {locale: string}}) {
   const direttivoPeopleSenior = allPeople
     .filter(
       (person) => person.occupation === "direttivo" && person.level === "senior",

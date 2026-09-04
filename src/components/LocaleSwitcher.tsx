@@ -1,12 +1,14 @@
 'use client';
 
-import { useLocale } from 'next-intl';
 import { routing } from '@/routing';
 import { useRouter, usePathname } from 'next/navigation';
 import { useState } from 'react';
 
-export function LocaleSwitcher() {
-  const locale = useLocale();
+interface LocaleSwitcherProps {
+  locale: string;
+}
+
+export function LocaleSwitcher({ locale }: LocaleSwitcherProps) {
   const router = useRouter();
   const pathname = usePathname();
   const [isLoading, setIsLoading] = useState(false);
