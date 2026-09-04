@@ -51,9 +51,15 @@ export const AppNavbar = () => {
     },
   ];
 
+  // Helper to create locale-aware paths
+  const getLocalizedHref = (path: string) => {
+    if (path === "/") return `/${locale}`;
+    return `/${locale}${path}`;
+  };
+
   return (
     <nav className="mx-auto bg-background sticky top-0 z-10 rounded-full mt-2 my-8 shadow-lg max-w-fit flex items-center">
-      <Link href="/" className="relative w-24 h-8 block mx-4">
+      <Link href={getLocalizedHref("/")} className="relative w-24 h-8 block mx-4">
         <Image src="/logo.png" alt="Logo" fill />
       </Link>
       <div className="block md:hidden"></div>
@@ -62,7 +68,7 @@ export const AppNavbar = () => {
           <NavigationMenuList>
             {allNavigationLinks.map((e, key) => (
               <NavigationMenuItem key={key}>
-                <Link href={e.href} legacyBehavior passHref>
+                <Link href={getLocalizedHref(e.href)} legacyBehavior passHref>
                   <NavigationMenuLink
                     className={navigationMenuTriggerStyle()}
                   >
@@ -87,7 +93,7 @@ export const AppNavbar = () => {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   {allNavigationLinks.map((e, key) => (
-                    <Link href={e.href} legacyBehavior passHref key={key}>
+                    <Link href={getLocalizedHref(e.href)} legacyBehavior passHref key={key}>
                       <NavigationMenuLink
                         className={navigationMenuTriggerStyle()}
                       >
